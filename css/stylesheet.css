@@ -1,3 +1,6 @@
+/* すべて */
+*{box-sizing: border-box;}
+
 /* セクション２の上部 */
 .s2-a1{
     text-align: center;
@@ -5,48 +8,95 @@
 
 .s2-b1{
     width:375px;
-    font-size: 25px;
     margin-left:auto;
     margin-right:auto;
-    line-height: 30px;
+    font-size: 25px;
     font-family: "ヒラギノ角ゴシック";
+    font-weight: 600;
+    line-height: 200%;
+
 }
 .s2-2b1{
-    width: 300px;
+    width:250px;
+    height:175.78px;
     margin-top: 10px;
+    margin-bottom: 10px;
     margin-left:auto;
     margin-right: auto;
-}
-.s2-2c1{display: none;}
-.s2-3c1{
-    width:100%;
-}
-.s2-4c1{
-    height: 90px;
+}   
+
+.s2-3b1{
+    width:540px;
+    height: 70px;
     margin-top:10px;
+    margin-bottom:10px;
+    margin-left:auto;
+    margin-right: auto;
+    padding:10px;
     background-color:rgb(244,97,36);
 }
+
+
 /* セクション２の下部 */
-.s2-b2{position: relative;
-    height:200px;}
-.s2-c2{
-    transform: rotateZ(-13deg);
-    color:rgb(244,97,36);
+.s2-a2{
+    padding-top:100px;
+    position: relative;
+}
+.s2-b2{
+    width:auto;
     border-bottom: 2px solid rgb(244,97,36);
-    padding-bottom: 5px;
-    width: 300px;
+    padding-bottom: 10px;
+    color:rgb(244,97,36); 
     position: absolute;
     left:10px;
+    transform: rotateZ(-13deg);
 }
-.s2-d2{
-    margin:0px 0px 10px 0px;
+.s2-c2{
+    font-size: 25px;
+    font-weight:600;
+    margin-top: 0px;
+    margin-bottom:0px;
 }
-.s2-2d2{
+.s2-2c2{
     font-size: 50px;
-    font-weight: 900;
-    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
-    margin:0px;
-    line-height: 50px;
+    font-weight:900;
+    line-height: 100%;
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding-bottom:5px;
+    color:white;
+    -webkit-text-stroke: 2px rgb(244,97,36); /* webkitのベンダープレフィックス */
+    position: absolute;
+    top:47px;
+    right:7px;
+    z-index: -1;
+}
+.s2-3c2{
+    font-size: 50px;
+    font-weight:900;
+    line-height: 100%;
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding-bottom:5px;
+}
+.s2-2b2{
+    width:375px;
+    margin-top:150px;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight:600;
+    font-family: 'ヒラギノ角ゴシック';
+    line-height: 150%;
+}
+.s2-3b2{
+    width: 430px;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'ヒラギノ角ゴシック';
+    line-height: 150%;
 }
 
 
@@ -107,30 +157,17 @@ font-family: "ヒラギノ角ゴシック";
 }
 
 
-
-@media screen and (max-width:600px){
+@media (max-width:600px){
        .s2-b1{
-            line-height: 40px;
             font-size: 15px;
-            line-height: 22px;}
+            line-height: 150%;
+        }
         .s2-2b1{
             width: 150px;
-            margin-top: 10px;
-            margin-left:auto;
-            margin-right: auto;
+            height:105px;
         }
-        .s2-4c1{
-            height: 50px;}
-       .s2-2c1{display: inline;}
+        .s2-3b1{
+            width:250px;
+            height:auto;
+        } 
        
-    }
-
-        .s1{
-            width: 100%;
-            height: 100vh;
-    }
-
-        .s1 img { 
-            width: 100%; 
-            height: 100vh;
-    }
