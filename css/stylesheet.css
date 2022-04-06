@@ -1,3 +1,6 @@
+/* すべて */
+*{box-sizing: border-box;}
+
 /* セクション２の上部 */
 .s2-a1{
     text-align: center;
@@ -5,26 +8,31 @@
 
 .s2-b1{
     width:375px;
-    font-size: 25px;
     margin-left:auto;
     margin-right:auto;
-    line-height: 30px;
+    font-size: 25px;
     font-family: "ヒラギノ角ゴシック";
+    font-weight: 600;
+    line-height: 200%;
+
 }
 .s2-2b1{
-    width: 300px;
+    width: 540px;
     margin-top: 10px;
     margin-left:auto;
     margin-right: auto;
 }
-.s2-2c1{display: none;}
 .s2-3c1{
-    width:100%;
+    width:250px;
+    height:175.78px;
 }
 .s2-4c1{
-    height: 90px;
+    width:540px;
+    height: 70px;
     margin-top:10px;
+    padding:10px;
     background-color:rgb(244,97,36);
+    
 }
 /* セクション２の下部 */
 .s2-b2{position: relative;
@@ -100,7 +108,7 @@ body{
     
 
 
-@media screen and (max-width:600px){
+@media (max-width:600px){
        .s2-b1{
             line-height: 40px;
             font-size: 15px;
@@ -113,7 +121,7 @@ body{
         }
         .s2-4c1{
             height: 50px;}
-       .s2-2c1{display: inline;}
+     
        
     }
 
