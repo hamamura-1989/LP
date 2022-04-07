@@ -497,6 +497,8 @@ width:200px;
     font-size: 30px;
     line-height: 120%;
     font-family:"Hiragino Kaku Gothic ProN",sans-serif;
+    text-decoration: none;
+    color:black;
 }
 
 
@@ -667,5 +669,25 @@ width:200px;
             width:40px;
             height:60px;
         }
-        
+        /* セクション８　レスポンシブ */
+        .s8-a1{
+            width:60px;
+            height:60px;
+            border-radius: 50%;
+            background-color:rgb(227,247,191);
+            position:fixed;
+            bottom:20px;
+            right:20px;
+        }
+        .s8-b1{
+            text-align: center;
+            position:absolute;
+            top:50%;
+            transform:translateY(-45%);
+            font-size: 15px;
+            line-height: 120%;
+            font-family:"Hiragino Kaku Gothic ProN",sans-serif;
+            text-decoration: none;
+            color:black;
+        }
     }
