@@ -479,6 +479,115 @@ width:200px;
     top:900px;
     left:940px;
 }
+
+/* セクション７ */
+
+.s7-a1{
+    padding-top:100px;
+    margin-bottom:200px;
+    position: relative;
+}
+.s7-b1{
+    width:auto;
+    border-bottom: 2px solid rgb(244,97,36);
+    padding-bottom: 10px;
+    color:rgb(244,97,36); 
+    position: absolute;
+    left:10px;
+    transform: rotateZ(-13deg);
+}
+.s7-c1{
+    font-size: 25px;
+    font-weight:600;
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+.s7-2c1{
+    font-size: 50px;
+    font-weight:900;
+    line-height: 100%;
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding-bottom:5px;
+    color:white;
+    -webkit-text-stroke: 2px rgb(244,97,36); /* webkitのベンダープレフィックス */
+    position: absolute;
+    top:47px;
+    left:-7px;
+    z-index: -1;
+}
+.s7-3c1{
+    font-size: 50px;
+    font-weight:900;
+    line-height: 100%;
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding-bottom:5px;
+}
+
+.s7-a2{
+    height:600px;
+    background-color: blue;
+    opacity:0.1;
+}
+
+/* フォーム */
+    /* フォーム全体 */
+.s7-a3{
+    max-width:790px;
+    margin-right:auto;
+    margin-left:auto;
+}
+    /* フォーム一行　１、２、３、４つ目 */
+.s7-b3 , .s7-2b3 , .s7-3b3 , .s7-4b3{
+    display: flex;
+    align-items: center;
+    width:100%;
+    padding:20px 5px;
+    background-color: yellow;
+    border-bottom: 3px solid rgb(112, 112, 112);
+}
+    /* フォーム一行　１、2つ目 */
+.s7-b3 , .s7-2b3{
+    flex-wrap: wrap;
+}
+
+        /* フォームの左側　１、２、３、４つ目 */
+.s7-c3 , .s7-4c3 , .s7-7c3 , .s7-9c3{
+    width:100%;
+    max-width:250px;
+    font-size:15px;
+    font-weight:300;
+    font-family: 'ヒラギノ角ゴシック';
+}
+         /*フォームの右側　１、２つ目  ＋　入力欄の右側だけマージンつける*/
+.s7-2c3 , .s7-3c3 , .s7-5c3 , .s7-6c3{
+    width:100%;
+    max-width:240px;
+    height:47.5px;
+}
+.s7-3c3 , .s7-6c3{
+    margin-left:40px;
+}
+        /*フォームの右側　３、４つ目  */
+.s7-8c3 , .s7-10c3{
+    width:100%;
+    max-width:521px;
+    height:47.5px;
+}
+        /* フォームの必須表示 ２、３、４つ目*/
+.s7-d3 , .s7-2d3 , .s7-3d3 , .s7-4d3{
+    display: inline-block;
+    height:18px;
+    width: 46px;
+    background-color:rgb(244,97,36);
+    text-align: center;
+    color:white;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right:20px;
+}
+
 /* セクション８ */
 .s8-a1{
     width:120px;
@@ -497,6 +606,8 @@ width:200px;
     font-size: 30px;
     line-height: 120%;
     font-family:"Hiragino Kaku Gothic ProN",sans-serif;
+    text-decoration: none;
+    color:black;
 }
 
 
@@ -667,5 +778,47 @@ width:200px;
             width:40px;
             height:60px;
         }
-        
+
+        /* セクション７　レスポンシブ */
+             /* 全体 */
+        .s7-a3{
+            max-width:324px;
+        }
+            /* フォーム一行 ３、４つ目　向きを変えて左端に揃える*/
+        .s7-3b3 , .s7-4b3{
+            flex-direction: column;
+            align-items:flex-start;
+        }
+            /* フォーム右側が二つあるやつ　１、２つ目 入力欄の幅を変えて、間の微調整*/
+        .s7-2c3 , .s7-3c3 , .s7-5c3 , .s7-6c3{
+            width:100%;
+            max-width:143px;
+            height:47.5px;
+        }
+        .s7-3c3 , .s7-6c3{
+            margin-left:28px;
+        }
+
+
+        /* セクション８　レスポンシブ */
+        .s8-a1{
+            width:60px;
+            height:60px;
+            border-radius: 50%;
+            background-color:rgb(227,247,191);
+            position:fixed;
+            bottom:20px;
+            right:20px;
+        }
+        .s8-b1{
+            text-align: center;
+            position:absolute;
+            top:50%;
+            transform:translateY(-45%);
+            font-size: 15px;
+            line-height: 120%;
+            font-family:"Hiragino Kaku Gothic ProN",sans-serif;
+            text-decoration: none;
+            color:black;
+        }
     }
