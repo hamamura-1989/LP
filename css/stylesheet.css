@@ -335,6 +335,9 @@ width:200px;
   position: relative;
   background:rgba(244, 97, 36, 0.1);
   height: 1280px;
+  display: flex;
+
+  
 }
 /* セクション5タイトル */
 .s5-a1{
@@ -359,6 +362,15 @@ width:200px;
 
 }
 
+.s5-1b3{
+   position: relative; 
+   bottom: 1.5vh;
+   color:#FFFFFF;
+   font-family: 'ヒラギノ角ゴシック';
+   font-size: 21px;
+
+}
+
 .s5-2b1{
   font-size: 50px;
   font-weight:900;
@@ -375,6 +387,7 @@ width:200px;
 
 }
 
+
 .s5-3b1{
    font-size: 50px;
    font-weight:900;
@@ -387,8 +400,249 @@ width:200px;
 
 }
 
-.s5-a2{}
 
+.s5-a2{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.s5-b2{
+  width: 346px;
+  height: 546px;
+  background-color:white;
+  position:relative;
+  border: 1px solid black; /* 境界線を実線で指定 */
+  border-radius: 20px; /* ボックスの四つ角を丸くする */
+  top: 500px;
+
+}
+
+.s5-2b2{
+  width: 346px;
+  height: 72px;
+  background-color: #EB9A18;
+  text-align: center;
+  border-radius: 20px; /* ボックスの四つ角を丸くする */
+  position: absolute;
+  top: 0px;
+}
+
+.s5-1b2{
+  width: 346px;
+  height: 72px;
+  background-color: #EB9A18;
+  text-align: center;
+  border-radius: 20px; /* ボックスの四つ角を丸くする */
+  position: absolute;
+  top: 0px;
+}
+
+
+.s5-b3{
+    width: 346px;
+    height: 546px;
+    background-color:white;
+    position:relative;
+    border: 1px solid black; /* 境界線を実線で指定 */
+    border-radius: 20px; /* ボックスの四つ角を丸くする */
+    top: 500px;
+    margin-right: auto;
+    }
+
+.s5-2b3{
+    width: 346px;
+    height: 72px;
+    background-color: #EB9A18;
+    text-align: center;
+    border-radius: 20px; /* ボックスの四つ角を丸くする */
+    position: absolute;
+    top: 0px;
+    }
+        
+
+.s5-3b3{
+   position: relative;  
+   bottom: 1.5vh;
+   color:#FFFFFF;
+   font-family: 'ヒラギノ角ゴシック';
+   font-size: 21px;
+}
+
+/* セクション5 BOX6個 */
+.s5-1b4{
+  width: 91px;
+  height: 29px;
+  background-color: white;
+  position: absolute;
+  top: 90px;
+  left: 15px;
+  border: 2px solid #F46124; /* 境界線を実線で指定 */
+  border-radius: 5px; /* ボックスの四つ角を丸くする */
+}
+
+
+.s5-2b4{
+  font-family: 'ヒラギノ角ゴシック';
+  color: #F46124;
+  font-size: 12px;
+  text-align: center;
+  height:0px;
+  line-height:0px;
+}
+
+.s5-1b5{
+    width: 91px;
+    height: 29px;
+    background-color: white;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+    border: 2px solid #F46124; /* 境界線を実線で指定 */
+    border-radius: 5px; /* ボックスの四つ角を丸くする */
+}
+    
+    
+    .s5-2b5{
+    font-family: 'ヒラギノ角ゴシック';
+    color: #F46124;
+    font-size: 12px;
+    text-align: center;
+    height:0px;
+    line-height:0px;
+}
+
+.s5-1b6{
+    width: 91px;
+    height: 29px;
+    background-color: white;
+    position: absolute;
+    top: 90px;
+    left: 225px;
+    border: 2px solid #F46124; /* 境界線を実線で指定 */
+    border-radius: 5px; /* ボックスの四つ角を丸くする */
+ }
+        
+        
+.s5-2b6{
+    font-family: 'ヒラギノ角ゴシック';
+    color: #F46124;
+    font-size: 12px;
+    text-align: center;
+    height:0px;
+    line-height:0px;
+}
+
+
+    .s5-1b7{
+    width: 91px;
+    height: 29px;
+    background-color: white;
+    position: absolute;
+    top: 130px;
+    left: 15px;
+    border: 2px solid #F46124; /* 境界線を実線で指定 */
+    border-radius: 5px; /* ボックスの四つ角を丸くする */
+}
+            
+            
+    .s5-2b7{
+    font-family: 'ヒラギノ角ゴシック';
+    color: #F46124;
+    font-size: 12px;
+    text-align: center;
+    height:0px;
+    line-height:0px;
+}
+
+
+.s5-1b8{
+    width: 91px;
+    height: 29px;
+    background-color: white;
+    position: absolute;
+    top: 130px;
+    left: 120px;
+    border: 2px solid #F46124; /* 境界線を実線で指定 */
+    border-radius: 5px; /* ボックスの四つ角を丸くする */
+}
+                    
+                    
+.s5-2b8{
+    font-family: 'ヒラギノ角ゴシック';
+    color: #F46124;
+    font-size: 12px;
+    text-align: center;
+    height:0px;
+    line-height:0px;
+}
+
+.s5-1b9{
+    width: 91px;
+    height: 29px;
+    background-color: white;
+    position: absolute;
+    top: 130px;
+    left: 225px;
+    border: 2px solid #F46124; /* 境界線を実線で指定 */
+    border-radius: 5px; /* ボックスの四つ角を丸くする */
+}
+                            
+                            
+.s5-2b9{
+    font-family: 'ヒラギノ角ゴシック';
+    color: #F46124;
+    font-size: 12px;
+    text-align: center;
+    height:0px;
+    line-height:0px;
+}
+
+/* セクション5 リスト */
+.s5-1b10{
+    position: absolute;
+    top: 160px;
+    left:-10px;
+}
+
+.s5-1b10 li{
+   font-family: 'ヒラギノ角ゴシック';
+   font-size: 12px;
+}
+
+.s5-1b10 p{
+  font-family: 'ヒラギノ角ゴシック';
+  font-size: 12px;
+
+}
+
+.s5-2b14 {
+    font-family: 'ヒラギノ角ゴシック';
+    font-size: 18px;
+    width: 250px;
+
+}
+
+.s5-1b11{
+    width: 218px;
+    height: 36px;
+    background-color: #B93201;
+    position: absolute;
+    bottom: 20px;
+    left: 15%; 
+    
+}
+
+.s5-1b11-2{
+  text-align: center;  
+  height:0px;
+  line-height:0px;  
+
+}
+
+    
 
 /* セクション６ */
 .s6{
