@@ -275,6 +275,12 @@ width:200px;
     position:absolute;
     right:0px;
 }
+.s4-c2{
+width:765px;
+height:700px;
+object-fit: cover;
+object-position: 100% 50%
+}
 .s4-4b2{
     width:371px;
     height:736px;
@@ -310,6 +316,12 @@ width:200px;
     position:absolute;
     left:0px;
 }
+.s4-c3{
+    width:765px;
+    height:700px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    }
 .s4-4b3{
     width:371px;
     height:736px;
@@ -735,10 +747,10 @@ width:200px;
 }
 
 /* セクション７ */
-
+    /* セクション７　タイトル */
 .s7-a1{
-    padding-top:100px;
-    margin-bottom:200px;
+    height:150px;
+    padding-top:40px;
     position: relative;
 }
 .s7-b1{
@@ -747,14 +759,15 @@ width:200px;
     padding-bottom: 10px;
     color:rgb(244,97,36); 
     position: absolute;
-    left:10px;
-    transform: rotateZ(-13deg);
+    right:20px;
+    transform: rotateZ(21deg);
 }
 .s7-c1{
     font-size: 25px;
     font-weight:600;
     margin-top: 0px;
     margin-bottom:0px;
+    text-align: end; /*右側タイトル用　左側の場合は不要*/
 }
 .s7-2c1{
     font-size: 50px;
@@ -762,9 +775,8 @@ width:200px;
     line-height: 100%;
     margin-top: 0px;
     margin-bottom:0px;
-    padding-bottom:5px;
     color:white;
-    -webkit-text-stroke: 2px rgb(244,97,36); /* webkitのベンダープレフィックス */
+    -webkit-text-stroke: 3px rgb(244,97,36); /* webkitのベンダープレフィックス */
     position: absolute;
     top:47px;
     left:-7px;
@@ -777,13 +789,35 @@ width:200px;
     margin-top: 0px;
     margin-bottom:0px;
     padding-bottom:5px;
+    -webkit-text-stroke: 3px rgb(244,97,36);
 }
 
+    /* セクション７　上段 */
 .s7-a2{
-    height:600px;
-    background-color: blue;
-    opacity:0.1;
+    height:230px;
+    display:flex;
+    align-items: center;
+    position:relative;
 }
+.s7-b2{
+    position:absolute;
+    left:170px;
+}
+.s7-2b2{
+    width:430px;
+    height:80%;
+    margin-left:500px;
+    font-weight: 600;
+}
+.s7-2b2-2{
+    width:160px;
+    height:80%;
+    margin-left:50px;
+    font-weight: 300;
+    font-size:12px;
+    display:none;        
+}
+
 
 /* フォーム */
     /* フォーム全体 */
@@ -792,22 +826,29 @@ width:200px;
     margin-right:auto;
     margin-left:auto;
 }
-    /* フォーム一行　１、２、３、４つ目 */
-.s7-b3 , .s7-2b3 , .s7-3b3 , .s7-4b3{
+    /* フォーム一行　１、２、３、４つ目　　５つ目はpadding弱め */
+.s7-b3 , .s7-2b3 , .s7-3b3 , .s7-4b3 , .s7-6b3{
     display: flex;
     align-items: center;
     width:100%;
     padding:20px 5px;
-    background-color: yellow;
     border-bottom: 3px solid rgb(112, 112, 112);
 }
-    /* フォーム一行　１、2つ目 */
+.s7-5b3{
+    display: flex;
+    align-items: center;
+    width:100%;
+    padding:15px 5px;
+    border-bottom: 3px solid rgb(112, 112, 112);
+}
+
+    /* フォーム一行　１、2つ目 　スマホ用（PC版では反応しないのでここに置いている）*/
 .s7-b3 , .s7-2b3{
     flex-wrap: wrap;
 }
 
-        /* フォームの左側　１、２、３、４つ目 */
-.s7-c3 , .s7-4c3 , .s7-7c3 , .s7-9c3{
+        /* フォームの左側　１、２、３、４、５、６つ目 */
+.s7-c3 , .s7-4c3 , .s7-7c3 , .s7-9c3 , .s7-11c3 , .s7-13c3{
     width:100%;
     max-width:250px;
     font-size:15px;
@@ -823,14 +864,26 @@ width:200px;
 .s7-3c3 , .s7-6c3{
     margin-left:40px;
 }
-        /*フォームの右側　３、４つ目  */
+        /*フォームの右側　３、４つ目*/
 .s7-8c3 , .s7-10c3{
     width:100%;
     max-width:521px;
     height:47.5px;
 }
-        /* フォームの必須表示 ２、３、４つ目*/
-.s7-d3 , .s7-2d3 , .s7-3d3 , .s7-4d3{
+        /*フォームの右側　5つ目の中身*/
+.s7-6d3 , .s7-7d3 , .s7-8d3{
+    margin-top:0px;
+    margin-bottom:0px;
+}
+        /* フォームの右側　６つ目 */
+.s7-14c3{
+    width:100%;
+    max-width:521px;
+    height:207.5px;
+}
+
+        /* フォームの必須表示 ２、３、４、５、６つ目*/
+.s7-d3 , .s7-2d3 , .s7-3d3 , .s7-4d3 , .s7-5d3 , .s7-9d3{
     display: inline-block;
     height:18px;
     width: 46px;
@@ -841,7 +894,17 @@ width:200px;
     line-height: 18px;
     margin-right:20px;
 }
-
+        /* フォームの送信 */
+.btn_send{
+    display:block;
+    width:350px;
+    height:60px;
+    margin: 30px auto; 
+    background-color:rgb(185, 50, 1);
+    font-size: 30px;
+    color:white;
+    font-weight:600;
+}
 /* セクション８ */
 .s8-a1{
     width:120px;
@@ -955,8 +1018,11 @@ width:200px;
         .s4-2b2{
             width:320px;
         }
+        /* 携帯用画像の切り抜き */
         .s4-c2{
             width:360px;
+            height:616px;
+            object-position: 88% 0%;
         }
         .s4-4b2{
             width:300px;
@@ -981,8 +1047,11 @@ width:200px;
         .s4-2b3{
             width:320px;
         }
+        /* 携帯用画像の切り抜き */
         .s4-c3{
             width:360px;
+            height:615px;
+            object-position: 50% 100%;
         }
         .s4-4b3{
             width:300px;
@@ -1034,16 +1103,84 @@ width:200px;
         }
 
         /* セクション７　レスポンシブ */
-             /* 全体 */
+            /* セクション７　タイトル */
+        .s7-a1{
+            height:100px;
+            padding-top:20px;
+            position: relative;
+        }
+        .s7-b1{
+            width:auto;
+            border-bottom: 1px solid rgb(244,97,36);
+            padding-bottom: 5px;
+            color:rgb(244,97,36); 
+            position: absolute;
+            right:10px;
+            transform: rotateZ(13deg);
+        }
+        .s7-c1{
+            font-size: 10px;
+            font-weight:600;
+            margin-top: 0px;
+            margin-bottom:0px;
+            text-align: end; /*右側タイトル用　左側の場合は不要*/
+        }
+        .s7-2c1{
+            font-size: 30px;
+            font-weight:900;
+            line-height: 100%;
+            margin-top: 0px;
+            margin-bottom:0px;
+            color:white;
+            -webkit-text-stroke: 1px rgb(244,97,36); /* webkitのベンダープレフィックス */
+            position: absolute;
+            top:20px;
+            left:-4px;
+            z-index: -1;
+        }
+        .s7-3c1{
+            font-size: 30px;
+            font-weight:900;
+            line-height: 100%;
+            margin-top: 0px;
+            margin-bottom:0px;
+            padding-bottom:3px;
+            -webkit-text-stroke: 1px rgb(244,97,36);
+        }
+
+            /* 上部アイコンとメッセージ */
+        .s7-a2{
+            height:120px;
+            background-color: red;
+        }
+        .s7-b2{
+            left:auto;
+            right:18px;
+        }
+        .s7-c2{
+            width:97px;
+            height:110px;
+        }
+        .s7-2b2{
+            display:none;
+        }
+        .s7-2b2-2{
+            display:block;
+        }
+             /* フォーム全体 */
         .s7-a3{
             max-width:324px;
         }
-            /* フォーム一行 ３、４つ目　向きを変えて左端に揃える*/
-        .s7-3b3 , .s7-4b3{
+            /*フォーム一行　１、２、３、４、5、６つ目 */
+        .s7-b3 , .s7-2b3 , .s7-3b3 , .s7-4b3 , .s7-5b3 , .s7-6b3{
+            padding-top:0px;
+        }
+            /* フォーム一行 ３、４、５、６つ目　向きを変えて左端に揃える*/
+        .s7-3b3 , .s7-4b3 , .s7-5b3 , .s7-6b3{
             flex-direction: column;
             align-items:flex-start;
         }
-            /* フォーム右側が二つあるやつ　１、２つ目 入力欄の幅を変えて、間の微調整*/
+            /* フォーム右側（右側が二つあるやつ）　１、２つ目 入力欄の幅を変えて、間の微調整*/
         .s7-2c3 , .s7-3c3 , .s7-5c3 , .s7-6c3{
             width:100%;
             max-width:143px;
@@ -1052,7 +1189,12 @@ width:200px;
         .s7-3c3 , .s7-6c3{
             margin-left:28px;
         }
-
+        .btn_send{
+            width:218px;
+            height:36px;
+            margin: 20px auto; 
+            font-size: 18px;
+        }
 
         /* セクション８　レスポンシブ */
         .s8-a1{
