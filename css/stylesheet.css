@@ -362,12 +362,29 @@ width:200px;
 
 }
 
+.s5-1b2{
+    width: 344px;
+    height: 72px;
+    line-height:72px;
+    background-color: #EB9A18;
+    text-align: center;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    position: absolute;
+    top: 0px;
+  }
+
+/* セクション5　左BOX */
 .s5-1b3{
    position: relative; 
    bottom: 1.5vh;
    color:#FFFFFF;
-   font-family: 'ヒラギノ角ゴシック';
+   font-family: "Hiragino Kaku Gothic";
    font-size: 21px;
+   font-weight: 600; 
+   display:inline-block;
+   vertical-align: middle;
+   line-height:normal;
 
 }
 
@@ -430,17 +447,7 @@ width:200px;
   top: 0px;
 }
 
-.s5-1b2{
-  width: 346px;
-  height: 72px;
-  background-color: #EB9A18;
-  text-align: center;
-  border-radius: 20px; /* ボックスの四つ角を丸くする */
-  position: absolute;
-  top: 0px;
-}
-
-
+/* セクション5　右BOX */
 .s5-b3{
     width: 346px;
     height: 546px;
@@ -452,23 +459,30 @@ width:200px;
     margin-right: auto;
     }
 
+
 .s5-2b3{
-    width: 346px;
+    width: 344px;
     height: 72px;
+    line-height: 72px;
     background-color: #EB9A18;
     text-align: center;
-    border-radius: 20px; /* ボックスの四つ角を丸くする */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     position: absolute;
     top: 0px;
     }
         
 
-.s5-3b3{
+.s5-2b3-2{
    position: relative;  
    bottom: 1.5vh;
    color:#FFFFFF;
-   font-family: 'ヒラギノ角ゴシック';
+   font-family: "Hiragino Kaku Gothic";
    font-size: 21px;
+   font-weight: 600;
+   display:inline-block;
+   vertical-align:middle;
+   line-height: normal;
 }
 
 /* セクション5 BOX6個 */
@@ -477,7 +491,7 @@ width:200px;
   height: 29px;
   background-color: white;
   position: absolute;
-  top: 90px;
+  top: 85px;
   left: 15px;
   border: 2px solid #F46124; /* 境界線を実線で指定 */
   border-radius: 5px; /* ボックスの四つ角を丸くする */
@@ -485,12 +499,13 @@ width:200px;
 
 
 .s5-2b4{
-  font-family: 'ヒラギノ角ゴシック';
+  font-family: "Hiragino Kaku Gothic";
   color: #F46124;
   font-size: 12px;
   text-align: center;
   height:0px;
   line-height:0px;
+  font-weight: 600;
 }
 
 .s5-1b5{
@@ -498,20 +513,21 @@ width:200px;
     height: 29px;
     background-color: white;
     position: absolute;
-    top: 90px;
+    top: 85px;
     left: 120px;
-    border: 2px solid #F46124; /* 境界線を実線で指定 */
+    border: 2px solid #B93201; /* 境界線を実線で指定 */
     border-radius: 5px; /* ボックスの四つ角を丸くする */
 }
     
     
-    .s5-2b5{
-    font-family: 'ヒラギノ角ゴシック';
-    color: #F46124;
+.s5-2b5{
+    font-family: "Hiragino Kaku Gothic";
+    color: #B93201;
     font-size: 12px;
     text-align: center;
     height:0px;
     line-height:0px;
+    font-weight: 600;
 }
 
 .s5-1b6{
@@ -519,42 +535,44 @@ width:200px;
     height: 29px;
     background-color: white;
     position: absolute;
-    top: 90px;
+    top: 85px;
     left: 225px;
-    border: 2px solid #F46124; /* 境界線を実線で指定 */
+    border: 2px solid #86BE2E; /* 境界線を実線で指定 */
     border-radius: 5px; /* ボックスの四つ角を丸くする */
  }
         
         
 .s5-2b6{
-    font-family: 'ヒラギノ角ゴシック';
-    color: #F46124;
+    font-family: "Hiragino Kaku Gothic";
+    color: #86BE2E;
     font-size: 12px;
     text-align: center;
     height:0px;
     line-height:0px;
+    font-weight: 600;
 }
 
 
-    .s5-1b7{
+.s5-1b7{
     width: 91px;
     height: 29px;
     background-color: white;
     position: absolute;
-    top: 130px;
+    top: 125px;
     left: 15px;
     border: 2px solid #F46124; /* 境界線を実線で指定 */
     border-radius: 5px; /* ボックスの四つ角を丸くする */
 }
             
             
-    .s5-2b7{
-    font-family: 'ヒラギノ角ゴシック';
+.s5-2b7{
+    font-family: "Hiragino Kaku Gothic";
     color: #F46124;
     font-size: 12px;
     text-align: center;
     height:0px;
     line-height:0px;
+    font-weight: 600;
 }
 
 
@@ -563,20 +581,21 @@ width:200px;
     height: 29px;
     background-color: white;
     position: absolute;
-    top: 130px;
+    top: 125px;
     left: 120px;
-    border: 2px solid #F46124; /* 境界線を実線で指定 */
+    border: 2px solid #546F29; /* 境界線を実線で指定 */
     border-radius: 5px; /* ボックスの四つ角を丸くする */
 }
                     
                     
 .s5-2b8{
-    font-family: 'ヒラギノ角ゴシック';
-    color: #F46124;
+    font-family: "Hiragino Kaku Gothic";
+    color: #546F29;
     font-size: 12px;
     text-align: center;
     height:0px;
     line-height:0px;
+    font-weight: 600;
 }
 
 .s5-1b9{
@@ -584,53 +603,43 @@ width:200px;
     height: 29px;
     background-color: white;
     position: absolute;
-    top: 130px;
+    top: 125px;
     left: 225px;
-    border: 2px solid #F46124; /* 境界線を実線で指定 */
+    border: 2px solid #F49C24; /* 境界線を実線で指定 */
     border-radius: 5px; /* ボックスの四つ角を丸くする */
 }
                             
                             
 .s5-2b9{
-    font-family: 'ヒラギノ角ゴシック';
-    color: #F46124;
+    font-family: "Hiragino Kaku Gothic";
+    color: #F49C24;
     font-size: 12px;
     text-align: center;
     height:0px;
     line-height:0px;
+    font-weight: 600;
 }
 
 /* セクション5 リスト */
 .s5-1b10{
     position: absolute;
-    top: 160px;
+    top: 150px;
     left:-10px;
 }
 
 .s5-1b10 li{
-   font-family: 'ヒラギノ角ゴシック';
-   font-size: 12px;
+   font-family:"Hiragino Kaku Gothic";
+   font-size: 13px;
+   font-weight: 600;
 }
 
-.s5-1b10 p{
-  font-family: 'ヒラギノ角ゴシック';
-  font-size: 12px;
-
-}
-
-.s5-2b14 {
-    font-family: 'ヒラギノ角ゴシック';
-    font-size: 18px;
-    width: 250px;
-
-}
 
 .s5-1b11{
     width: 218px;
     height: 36px;
     background-color: #B93201;
     position: absolute;
-    bottom: 20px;
+    bottom:15px;
     left: 15%; 
     
 }
@@ -639,9 +648,301 @@ width:200px;
   text-align: center;  
   height:0px;
   line-height:0px;  
+  font-family: "Hiragino Kaku Gothic";
+  font-size:18px;
+  font-weight: 600;
+  color: white;
 
 }
 
+
+.s5-2b11{
+  color: #F46124;   
+  font-weight: 600;
+  font-size: 12px;
+  margin: 7px;
+  position: relative;
+  right: 25px;
+}
+
+.s5-2b12{
+  color: #F46124; 
+  font-weight: 600;
+  font-size: 12px;
+  margin: 7px;
+  position: relative;
+  right: 25px;
+}
+
+.s5-2b13{
+  font-weight: 300;
+  font-size: 12px;
+  margin: 7px;
+  position: relative;
+  right: 25px;
+}
+
+.s5-2b14 {
+    font-family: "Hiragino Kaku Gothic";
+    font-size: 18px;
+    width: 330px;
+    font-weight: 300;
+    margin: 5px;
+    position: relative;
+    right: 25px;
+
+}
+
+ ul li{
+  list-style-type: none;   
+}
+
+ li::before{
+    position: relative;
+    top: 2px;
+    left: -18px;
+   
+    display: inline-block;
+   
+    width: 15px;
+    height: 15px;
+   
+    content: '';
+   
+    border-radius: 100%;
+    background:black;
+  }
+
+/* セクション5 BOX6個 2個目 */  
+
+.s5-3b3{
+    width: 91px;
+    height: 29px;
+    background-color: white;
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    border: 2px solid #F46124; /* 境界線を実線で指定 */
+    border-radius: 5px; /* ボックスの四つ角を丸くする */
+  }
+  
+  
+  .s5-3b3-2{
+    font-family: "Hiragino Kaku Gothic";
+    color: #F46124;
+    font-size: 12px;
+    text-align: center;
+    height:0px;
+    line-height:0px;
+    font-weight: 600;
+  }
+  
+  .s5-4b3{
+      width: 91px;
+      height: 29px;
+      background-color: white;
+      position: absolute;
+      top: 85px;
+      left: 120px;
+      border: 2px solid #B93201; /* 境界線を実線で指定 */
+      border-radius: 5px; /* ボックスの四つ角を丸くする */
+  }
+      
+      
+   .s5-4b3-2{
+      font-family: "Hiragino Kaku Gothic";
+      color: #B93201;
+      font-size: 12px;
+      text-align: center;
+      height:0px;
+      line-height:0px;
+      font-weight: 600;
+  }
+  
+  .s5-5b3{
+      width: 91px;
+      height: 29px;
+      background-color: white;
+      position: absolute;
+      top: 85px;
+      left: 225px;
+      border: 2px solid #86BE2E; /* 境界線を実線で指定 */
+      border-radius: 5px; /* ボックスの四つ角を丸くする */
+   }
+          
+          
+  .s5-5b3-2{
+      font-family: "Hiragino Kaku Gothic";
+      color: #86BE2E;
+      font-size: 12px;
+      text-align: center;
+      height:0px;
+      line-height:0px;
+      font-weight: 600;
+  }
+
+  
+  .s5-6b3{
+      width: 91px;
+      height: 29px;
+      background-color: white;
+      position: absolute;
+      top: 125px;
+      left: 15px;
+      border: 2px solid #F46124; /* 境界線を実線で指定 */
+      border-radius: 5px; /* ボックスの四つ角を丸くする */
+  }
+              
+              
+   .s5-6b3-2{
+      font-family: "Hiragino Kaku Gothic";
+      color: #F46124;
+      font-size: 12px;
+      text-align: center;
+      height:0px;
+      line-height:0px;
+      font-weight: 600;
+  }
+  
+  
+  .s5-7b3{
+      width: 91px;
+      height: 29px;
+      background-color: white;
+      position: absolute;
+      top: 125px;
+      left: 120px;
+      border: 2px solid #546F29; /* 境界線を実線で指定 */
+      border-radius: 5px; /* ボックスの四つ角を丸くする */
+  }
+                      
+                      
+  .s5-7b3-2{
+      font-family: "Hiragino Kaku Gothic";
+      color: #546F29;
+      font-size: 12px;
+      text-align: center;
+      height:0px;
+      line-height:0px;
+      font-weight: 600;
+  }
+  
+  .s5-8b3{
+      width: 91px;
+      height: 29px;
+      background-color: white;
+      position: absolute;
+      top: 125px;
+      left: 225px;
+      border: 2px solid #F49C24; /* 境界線を実線で指定 */
+      border-radius: 5px; /* ボックスの四つ角を丸くする */
+  }
+                              
+                              
+  .s5-8b3-2{
+      font-family: "Hiragino Kaku Gothic";
+      color: #F49C24;
+      font-size: 12px;
+      text-align: center;
+      height:0px;
+      line-height:0px;
+      font-weight: 600;
+  }
+
+ /* セクション5 リスト 2個目*/
+
+.s5-9b3{
+    position: absolute;
+    top: 150px;
+    left:-10px;
+}
+
+.s5-9b3 li{
+   font-family:"Hiragino Kaku Gothic";
+   font-size: 13px;
+   font-weight: 600;
+}
+
+
+
+.s5-10b3{
+  color: #F46124;   
+  font-weight: 600;
+  font-size: 12px;
+  margin: 7px;
+  position: relative;
+  right: 25px;
+}
+
+.s5-11b3{
+  color: #F46124; 
+  font-weight: 600;
+  font-size: 12px;
+  margin: 7px;
+  position: relative;
+  right: 25px;
+}
+
+.s5-12b3{
+  font-weight: 300;
+  font-size: 12px;
+  margin: 7px;
+  position: relative;
+  right: 25px;
+}
+
+.s5-13b3{
+    font-family: "Hiragino Kaku Gothic";
+    font-size: 18px;
+    width: 330px;
+    font-weight: 300;
+    margin: 5px;
+    position: relative;
+    right: 25px;
+
+}
+
+.s5-14b3{
+    width: 218px;
+    height: 36px;
+    background-color: #B93201;
+    position: absolute;
+    bottom:15px;
+    left: 15%; 
+    
+}
+
+.s5-14b3-2{
+  text-align: center;  
+  height:0px;
+  line-height:0px;  
+  font-family: "Hiragino Kaku Gothic";
+  font-size:18px;
+  font-weight: 600;
+  color: white;
+
+}
+
+ ul li{
+  list-style-type: none;   
+}
+
+ li::before{
+    position: relative;
+    top: 2px;
+    left: -18px;
+   
+    display: inline-block;
+   
+    width: 15px;
+    height: 15px;
+   
+    content: '';
+   
+    border-radius: 100%;
+    background:black;
+  }
+     
     
 
 /* セクション６ */
@@ -1000,6 +1301,30 @@ width:200px;
             top:300px;
             color:white;
         }
+
+/* セクション5 レスポンシブ */
+      
+       .s5{
+           display: flex;
+           flex-wrap: wrap;
+           height: 1800px;
+       }
+
+        .s5-b2{
+          position: relative;
+          top: 60vh;  
+        }
+
+       .s5-b3{
+         display: flex;
+         flex-wrap: wrap;
+         position:relative;
+         top: 30vh;
+         left: 6px;
+
+       }
+
+   
 
 /* セクション６ レスポンシブ */
         .s6-b2{
