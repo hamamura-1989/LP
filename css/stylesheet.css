@@ -315,12 +315,15 @@ object-position: 100% 50%
     margin-top:30px;
     position:absolute;
     left:0px;
-}
-.s4-c3{
     width:765px;
     height:700px;
-    object-fit: cover;
-    object-position: 50% 20%;
+    overflow: hidden;
+}
+.s4-c3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -38%);
     }
 .s4-4b3{
     width:371px;
@@ -1349,11 +1352,18 @@ object-position: 100% 50%
             width:320px;
         }
         /* 携帯用画像の切り抜き */
-        .s4-c3{
+        .s4-3b3{
+            margin-top:20px;
             width:360px;
             height:615px;
-            object-position: 50% 100%;
         }
+        .s4-c3{
+            zoom:0.61;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-53%, -56%);
+            }
         .s4-4b3{
             width:300px;
             height:300px;
