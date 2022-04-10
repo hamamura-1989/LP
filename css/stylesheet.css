@@ -1,12 +1,100 @@
 /* すべて */
 *{box-sizing: border-box;}
+/*文字色が共通のところ　緑、オレンジ */
+.orange{
+    color: rgb(244,97,36);
+}
+.green{
+    color:rgb(134,190,46);   
+}
 
+/* タイトル */
+    /*  タイトル全体 */
+        /* 上を少しあける　基準位置とする */
+        .title-wrapper{
+            padding-top: 10px;
+            position: relative;
+        }
+        /* タイトル全体　左右どちらかによる回転と位置調整 */
+        .title-left{
+            margin-left:-1%;
+            transform-origin: 20% 0%;
+        }
+        .title-right{
+            text-align: end;
+            margin-right:-1%;
+            transform-origin: 80% 0%;
+        }
+        /* タイトル全体　角度のばらつき　これによって下との間隔も変える */
+        .degree-21{
+            transform: rotateZ(-21deg);
+            padding-bottom: 120px;
+        }
+        .degree-13{
+            transform: rotateZ(-13deg);
+            padding-bottom: 60px;
+        }
+        .degree19{
+            transform: rotateZ(19deg);
+            padding-bottom: 90px;
+        }
+
+    /* タイトルの中身 */
+        /* サブタイトル */
+        .sub-title{
+            font-size: 25px;
+            font-weight:600;
+            margin-top: 0px;
+            margin-bottom:0px;
+        }
+        /* メインタイトル　前の文字 */
+        .main-frontTitle{
+            font-size: 50px;
+            font-weight:900;
+            line-height: 100%;
+            margin-top: 0px;
+            margin-bottom:0px;
+            padding-bottom:5px;
+        }
+        /* メインタイトル　前文字　縁取り */
+        .main-frontTitle{
+            -webkit-text-stroke: 3px;
+        }
+        /* メインタイトル　後ろ文字 */
+        .main-backTitle{
+            font-size: 50px;
+            font-weight:900;
+            line-height: 100%;
+            margin-top: 0px;
+            margin-bottom:0px;
+            padding-bottom:5px;
+            color:white;
+            position: absolute;
+            top:53px;
+            z-index: -1;
+        }
+        /* メインタイトル　後ろ文字　緑 */
+        .backTitle-green{
+            -webkit-text-stroke: 2px rgb(134,190,46);   ; /* webkitのベンダープレフィックス */
+            border-bottom: 2px solid rgb(134,190,46);
+        }
+        /* メインタイトル　後ろ文字　オレンジ */
+        .backTitle-orange{
+            -webkit-text-stroke: 2px rgb(244,97,36); /* webkitのベンダープレフィックス */
+            border-bottom: 2px solid rgb(244,97,36);
+        }
+        /* メインタイトル　後ろ文字　右側か左側か */
+        .backTitle-right{
+            right:7px;
+        }
+        .backTitle-left{
+            left:-7px;
+        }
 
 /* セクション２の上部 */
 .s2-a1{
     text-align: center;
 }    
-
 .s2-b1{
     width:375px;
     margin-left:auto;
@@ -15,7 +103,6 @@
     font-family: "ヒラギノ角ゴシック";
     font-weight: 600;
     line-height: 200%;
-
 }
 .s2-2b1{
     width:250px;
@@ -25,7 +112,6 @@
     margin-left:auto;
     margin-right: auto;
 }   
-
 .s2-3b1{
     display:inline-block;
     margin-top:10px;
@@ -38,52 +124,9 @@
     color:white;
 }
 
-
 /* セクション２の下部 */
-.s2-a2{
-    padding-top:100px;
-    position: relative;
-}
-.s2-b2{
-    width:auto;
-    border-bottom: 2px solid rgb(244,97,36);
-    padding-bottom: 10px;
-    color:rgb(244,97,36); 
-    position: absolute;
-    left:10px;
-    transform: rotateZ(-13deg);
-}
-.s2-c2{
-    font-size: 25px;
-    font-weight:600;
-    margin-top: 0px;
-    margin-bottom:0px;
-}
-.s2-2c2{
-    font-size: 50px;
-    font-weight:900;
-    line-height: 100%;
-    margin-top: 0px;
-    margin-bottom:0px;
-    padding-bottom:5px;
-    color:white;
-    -webkit-text-stroke: 2px rgb(244,97,36); /* webkitのベンダープレフィックス */
-    position: absolute;
-    top:47px;
-    left:-7px;
-    z-index: -1;
-}
-.s2-3c2{
-    font-size: 50px;
-    font-weight:900;
-    line-height: 100%;
-    margin-top: 0px;
-    margin-bottom:0px;
-    padding-bottom:5px;
-}
 .s2-2b2{
     width:375px;
-    margin-top:150px;
     margin-left:auto;
     margin-right: auto;
     font-size: 25px;
@@ -213,48 +256,6 @@ width:200px;
 
 
 /* セクション４ */
-.s4{
-    padding-top:100px;
-    position:relative;
-}
-    /* セクション４タイトル */
-.s4-a1{
-    width:auto;
-    border-bottom: 2px solid rgb(244,97,36);
-    padding-bottom: 10px;
-    color:rgb(244,97,36); 
-    position: absolute;
-    left:10px;
-    transform: rotateZ(-21deg);
-}
-.s4-b1{
-    font-size: 25px;
-    font-weight:600;
-    margin-top: 0px;
-    margin-bottom:0px;
-}
-.s4-2b1{
-    font-size: 50px;
-    font-weight:900;
-    line-height: 100%;
-    margin-top: 0px;
-    margin-bottom:0px;
-    padding-bottom:5px;
-    color:white;
-    -webkit-text-stroke: 2px rgb(244,97,36); /* webkitのベンダープレフィックス */
-    position: absolute;
-    top:47px;
-    left:-7px;
-    z-index: -1;
-}
-.s4-3b1{
-    font-size: 50px;
-    font-weight:900;
-    line-height: 100%;
-    margin-top: 0px;
-    margin-bottom:0px;
-    padding-bottom:5px;
-}
     /* セクション４ タイトル以外　一つ目　一部二つ目も共通*/
 .s4-a2 , .s4-a3{
     position:relative;
@@ -966,45 +967,6 @@ object-position: 100% 50%
     background-color: rgba(227, 247,196,0.57);
     height:1312px;
 }
-    /* セクション6タイトル */
-.s6-a1{
-    width:auto;
-    border-bottom: 2px solid rgb(134,190,46);
-    padding-bottom: 10px;
-    color:rgb(134,190,46); 
-    position: absolute;
-    left:10px;
-    top:60px;
-    transform: rotateZ(-21deg);
-}
-.s6-b1{
-    font-size: 25px;
-    font-weight:600;
-    margin-top: 0px;
-    margin-bottom:0px;
-}
-.s6-2b1{
-    font-size: 50px;
-    font-weight:900;
-    line-height: 100%;
-    margin-top: 0px;
-    margin-bottom:0px;
-    padding-bottom:5px;
-    color:white;
-    -webkit-text-stroke: 2px rgb(134,190,46); /* webkitのベンダープレフィックス */
-    position: absolute;
-    top:47px;
-    left:-7px;
-    z-index: -1;
-}
-.s6-3b1{
-    font-size: 50px;
-    font-weight:900;
-    line-height: 100%;
-    margin-top: 0px;
-    margin-bottom:0px;
-    padding-bottom:5px;
-}
 .s6-b2{
     position:absolute;
     top:300px;
@@ -1051,51 +1013,6 @@ object-position: 100% 50%
 }
 
 /* セクション７ */
-    /* セクション７　タイトル */
-.s7-a1{
-    height:150px;
-    padding-top:40px;
-    position: relative;
-}
-.s7-b1{
-    width:auto;
-    border-bottom: 2px solid rgb(244,97,36);
-    padding-bottom: 10px;
-    color:rgb(244,97,36); 
-    position: absolute;
-    right:20px;
-    transform: rotateZ(21deg);
-}
-.s7-c1{
-    font-size: 25px;
-    font-weight:600;
-    margin-top: 0px;
-    margin-bottom:0px;
-    text-align: end; /*右側タイトル用　左側の場合は不要*/
-}
-.s7-2c1{
-    font-size: 50px;
-    font-weight:900;
-    line-height: 100%;
-    margin-top: 0px;
-    margin-bottom:0px;
-    color:white;
-    -webkit-text-stroke: 3px rgb(244,97,36); /* webkitのベンダープレフィックス */
-    position: absolute;
-    top:47px;
-    left:-7px;
-    z-index: -1;
-}
-.s7-3c1{
-    font-size: 50px;
-    font-weight:900;
-    line-height: 100%;
-    margin-top: 0px;
-    margin-bottom:0px;
-    padding-bottom:5px;
-    -webkit-text-stroke: 3px rgb(244,97,36);
-}
-
     /* セクション７　上段 */
 .s7-a2{
     height:230px;
@@ -1236,6 +1153,61 @@ object-position: 100% 50%
 /* ここからスマホ用レスポンシブデザイン */
 /* ここからスマホ用レスポンシブデザイン */
 @media (max-width:600px){
+/* タイトル　レスポンシブ */
+    /* 上部を少しあける */
+    .title-wrapper{
+        padding-top: 20px;
+    }
+    /* タイトル全体　角度のばらつき　これによって下との間隔も変える */
+       /* 元の角度解除 */
+        .degree-21{
+            transform: unset;
+            padding-bottom: initial;
+        }
+        .degree-13{
+            transform: unset;
+            padding-bottom: initial;
+        }
+        .degree19{
+            transform: unset;
+            padding-bottom: initial;
+        }
+        /* スマホ用の角度と間隔　スマホでは右か左かで決めている */
+        .degree9{
+            transform: rotateZ(-9deg);
+            padding-bottom: 20px;
+        }
+        .degree17{
+            transform: rotateZ(17deg);
+            padding-bottom: 30px;
+        }
+    /* タイトルの中身のパーツ */
+        /* サブタイトル　サイズ */
+        .sub-title{
+            font-size: 10px;
+            font-weight:600;
+        }
+        /* メインタイトル　前の文字　サイズ*/
+        .main-frontTitle{
+            font-size: 30px;
+        }
+        /* メインタイトル　前文字　縁取り */
+        .main-frontTitle{
+            -webkit-text-stroke: 1px;
+        }
+        /* メインタイトル　後ろ文字　上下位置とサイズ */
+        .main-backTitle{
+            font-size: 30px;
+            top:38px;
+        }
+        /* メインタイトル　後ろ文字　左右位置　右側か左側か */
+        .backTitle-right{
+            right:3px;
+        }
+        .backTitle-left{
+            left:-3px;
+        }
+
 
 /* セクション２　レスポンシブ */
        .s2-b1{
@@ -1437,101 +1409,56 @@ object-position: 100% 50%
             height:60px;
         }
 
-        /* セクション７　レスポンシブ */
-            /* セクション７　タイトル */
-        .s7-a1{
-            height:100px;
-            padding-top:20px;
-            position: relative;
-        }
-        .s7-b1{
-            width:auto;
-            border-bottom: 1px solid rgb(244,97,36);
-            padding-bottom: 5px;
-            color:rgb(244,97,36); 
-            position: absolute;
-            right:10px;
-            transform: rotateZ(13deg);
-        }
-        .s7-c1{
-            font-size: 10px;
-            font-weight:600;
-            margin-top: 0px;
-            margin-bottom:0px;
-            text-align: end; /*右側タイトル用　左側の場合は不要*/
-        }
-        .s7-2c1{
-            font-size: 30px;
-            font-weight:900;
-            line-height: 100%;
-            margin-top: 0px;
-            margin-bottom:0px;
-            color:white;
-            -webkit-text-stroke: 1px rgb(244,97,36); /* webkitのベンダープレフィックス */
-            position: absolute;
-            top:20px;
-            left:-4px;
-            z-index: -1;
-        }
-        .s7-3c1{
-            font-size: 30px;
-            font-weight:900;
-            line-height: 100%;
-            margin-top: 0px;
-            margin-bottom:0px;
-            padding-bottom:3px;
-            -webkit-text-stroke: 1px rgb(244,97,36);
-        }
+/* セクション７　レスポンシブ */
+    /* 上部アイコンとメッセージ */
+    .s7-a2{
+        height:120px;
+        background-color: red;
+    }
+    .s7-b2{
+        left:auto;
+        right:18px;
+    }
+    .s7-c2{
+        width:97px;
+        height:110px;
+    }
+    .s7-2b2{
+        display:none;
+    }
+    .s7-2b2-2{
+        display:block;
+    }
+    /* フォーム全体 */
+    .s7-a3{
+        max-width:324px;
+    }
+    /*フォーム一行　１、２、３、４、5、６つ目 */
+    .s7-b3 , .s7-2b3 , .s7-3b3 , .s7-4b3 , .s7-5b3 , .s7-6b3{
+        padding-top:0px;
+    }
+    /* フォーム一行 ３、４、５、６つ目　向きを変えて左端に揃える*/
+    .s7-3b3 , .s7-4b3 , .s7-5b3 , .s7-6b3{
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    /* フォーム右側（右側が二つあるやつ）　１、２つ目 入力欄の幅を変えて、間の微調整*/
+    .s7-2c3 , .s7-3c3 , .s7-5c3 , .s7-6c3{
+        width:100%;
+        max-width:143px;
+        height:47.5px;
+    }
+    .s7-3c3 , .s7-6c3{
+        margin-left:28px;
+    }
+    .btn_send{
+        width:218px;
+        height:36px;
+        margin: 20px auto; 
+        font-size: 18px;
+    }
 
-            /* 上部アイコンとメッセージ */
-        .s7-a2{
-            height:120px;
-            background-color: red;
-        }
-        .s7-b2{
-            left:auto;
-            right:18px;
-        }
-        .s7-c2{
-            width:97px;
-            height:110px;
-        }
-        .s7-2b2{
-            display:none;
-        }
-        .s7-2b2-2{
-            display:block;
-        }
-             /* フォーム全体 */
-        .s7-a3{
-            max-width:324px;
-        }
-            /*フォーム一行　１、２、３、４、5、６つ目 */
-        .s7-b3 , .s7-2b3 , .s7-3b3 , .s7-4b3 , .s7-5b3 , .s7-6b3{
-            padding-top:0px;
-        }
-            /* フォーム一行 ３、４、５、６つ目　向きを変えて左端に揃える*/
-        .s7-3b3 , .s7-4b3 , .s7-5b3 , .s7-6b3{
-            flex-direction: column;
-            align-items:flex-start;
-        }
-            /* フォーム右側（右側が二つあるやつ）　１、２つ目 入力欄の幅を変えて、間の微調整*/
-        .s7-2c3 , .s7-3c3 , .s7-5c3 , .s7-6c3{
-            width:100%;
-            max-width:143px;
-            height:47.5px;
-        }
-        .s7-3c3 , .s7-6c3{
-            margin-left:28px;
-        }
-        .btn_send{
-            width:218px;
-            height:36px;
-            margin: 20px auto; 
-            font-size: 18px;
-        }
-
-        /* セクション８　レスポンシブ */
+/* セクション８　レスポンシブ */
         .s8-a1{
             width:60px;
             height:60px;
