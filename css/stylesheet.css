@@ -21,8 +21,9 @@
     /*  タイトル全体 */
         /* 上を少しあける　基準位置とする */
         .title-wrapper{
-            padding-top: 10px;
+            padding-top: 50px;
             position: relative;
+            max-width: 50%;
         }
         /* タイトル全体　左右どちらかによる回転と位置調整 */
         .title-left{
@@ -31,22 +32,22 @@
         }
         .title-right{
             text-align: end;
-            margin-right:-1%;
+            margin-right:0px;
+            margin-left:auto;
             transform-origin: 80% 0%;
         }
         /* タイトル全体　角度のばらつき　これによって下との間隔も変える */
         .degree-21{
             transform: rotateZ(-21deg);
-            padding-bottom: 120px;
+            padding-bottom: 50px;
         }
         .degree-13{
             transform: rotateZ(-13deg);
-            padding-bottom: 60px;
+            padding-bottom: 20px;
         }
         .degree19{
             transform: rotateZ(19deg);
-            padding-bottom: 90px;
-            position: relative;
+            padding-bottom: 40px;
             top: 5%;
         }
 
@@ -81,7 +82,7 @@
             padding-bottom:5px;
             color:white;
             position: absolute;
-            top:53px;
+            top:93px;
             z-index: -1;
         }
         /* メインタイトル　後ろ文字　緑 */
@@ -1050,7 +1051,7 @@ top: 0px;
 .s6-2b2{
     width:773px;
     height:1072px;
-    background-color:rgb(67,95,23);
+    background: linear-gradient(to bottom, rgba(67,95,23,0.12), rgba(100,142,34,0.56) 50%, rgba(132,187,45,0.97) 70%, rgba(67,95,23,0.12));
     opacity:0.39;
     position:absolute;
     left:420px;
@@ -1240,6 +1241,7 @@ top: 0px;
     /* 上部を少しあける */
     .title-wrapper{
         padding-top: 45px;
+        margin-right:0px;
     }
     /* タイトル全体　角度のばらつき　これによって下との間隔も変える */
        /* 元の角度解除 */
@@ -1262,7 +1264,7 @@ top: 0px;
         }
         .degree17{
             transform: rotateZ(17deg);
-            padding-bottom: 30px;
+            padding-bottom: 50px;
             position: relative;
             top:5vh;
         }
@@ -1385,6 +1387,7 @@ top: 0px;
         .allbox{
         left:5%;
         top: 15vh;
+        }
 
 
 
@@ -1486,6 +1489,7 @@ top: 0px;
 /* セクション６ レスポンシブ */
        .s6{
            height:880px;
+           background: linear-gradient(to bottom, rgba(255,255,255,0.57), rgba(227,247,191,0.57) 45%, rgba(211,230,178,0.57) 60%, rgba(224,244,189,0.57) 70%, rgba(255,255,255,0.57));
        }
         .s6-b2{
             position:absolute;
