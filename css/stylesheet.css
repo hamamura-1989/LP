@@ -382,7 +382,9 @@ object-position: 100% 50%
     width: 344px;
     height: 72px;
     line-height:72px;
-    background-color: #EB9A18;
+    background: -moz-linear-gradient(top left, #EB9A18,#ED812D 30%, #EF703C 60%, #B93201); 
+    background: -webkit-linear-gradient(top left, #EB9A18,#ED812D 30%, #EF703C 60%, #B93201); 
+    background: linear-gradient(top left, #EB9A18,#ED812D 30%, #EF703C 60%, #B93201); 
     text-align: center;
     border-top-left-radius:20px;
     border-top-right-radius:20px;
@@ -481,6 +483,9 @@ object-position: 100% 50%
     height: 72px;
     line-height: 72px;
     background-color: #EB9A18;
+    background: -moz-linear-gradient(top left, #EB9A18,#ED812D 30%, #EF703C 60%, #B93201); 
+    background: -webkit-linear-gradient(top left, #EB9A18,#ED812D 30%, #EF703C 60%, #B93201); 
+    background: linear-gradient(top left, #EB9A18,#ED812D 30%, #EF703C 60%, #B93201); 
     text-align: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
