@@ -1,13 +1,22 @@
 /* すべて */
 *{box-sizing: border-box;}
-/*文字色が共通のところ　緑、オレンジ */
+/*文字色が共通のところ　緑、オレンジ、白 */
 .orange{
     color: rgb(244,97,36);
 }
 .green{
     color:rgb(134,190,46);   
 }
-
+.white{
+    color:white;
+}
+/* 背景色が共通のところ　緑、オレンジ */
+.back-orange{
+    background-color: rgb(244,97,36);
+}
+.back-green{
+    background-color: rgb(134,190,46);
+}
 /* タイトル */
     /*  タイトル全体 */
         /* 上を少しあける　基準位置とする */
@@ -90,59 +99,59 @@
         .backTitle-left{
             left:-7px;
         }
+/* セクション２ */
+    /* 次のセクションとの間隔開ける */
+    .s2{
+        padding-bottom:120px;
+    }
+    /* セクション２の上部 */
+    .s2-a1{
+        text-align: center;
+    }    
+    .s2-b1{
+        width:375px;
+        margin:50px auto 20px auto;
+        font-size: 25px;
+        font-family: "ヒラギノ角ゴシック";
+        font-weight: 600;
+        line-height: 200%;
+    }
+    .s2-2b1{
+        width:250px;
+        height:175.78px;
+        margin:0px auto 20px auto;
+    }   
+    .s2-3b1{
+        display:inline-block;
+        margin-bottom:10px;
+        padding:0 30px;
+        font-size: 25px;
+        font-weight:600;
+        line-height:75px;
+    }
 
-/* セクション２の上部 */
-.s2-a1{
-    text-align: center;
-}    
-.s2-b1{
-    width:375px;
-    margin-left:auto;
-    margin-right:auto;
-    font-size: 25px;
-    font-family: "ヒラギノ角ゴシック";
-    font-weight: 600;
-    line-height: 200%;
-}
-.s2-2b1{
-    width:250px;
-    height:175.78px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left:auto;
-    margin-right: auto;
-}   
-.s2-3b1{
-    display:inline-block;
-    margin-top:10px;
-    margin-bottom:10px;
-    padding:0 30px;
-    background-color:rgb(244,97,36);
-    font-size: 25px;
-    font-weight:600;
-    line-height:75px;
-    color:white;
-}
+    /* セクション２の下部 */
+    .s2-2b2{
+        width:375px;
+        margin-left:auto;
+        margin-right: auto;
+        font-size: 25px;
+        font-weight:600;
+        font-family: 'ヒラギノ角ゴシック';
+        line-height: 150%;
+        text-align:center;
+    }
+    .s2-3b2{
+        width: 430px;
+        margin-left:auto;
+        margin-right: auto;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'ヒラギノ角ゴシック';
+        line-height: 150%;
+        text-align:center;
+    }
 
-/* セクション２の下部 */
-.s2-2b2{
-    width:375px;
-    margin-left:auto;
-    margin-right: auto;
-    font-size: 25px;
-    font-weight:600;
-    font-family: 'ヒラギノ角ゴシック';
-    line-height: 150%;
-}
-.s2-3b2{
-    width: 430px;
-    margin-left:auto;
-    margin-right: auto;
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'ヒラギノ角ゴシック';
-    line-height: 150%;
-}
 
 /* セクション1 */    
 .s1{
@@ -256,95 +265,93 @@ width:200px;
 
 
 /* セクション４ */
-    /* セクション４ タイトル以外　一つ目　一部二つ目も共通*/
-.s4-a2 , .s4-a3{
-    position:relative;
-    height:1200px;
-}
-.s4-b2, .s4-2b2{
-    display:inline-block;
-    margin:15px 0;
-    padding:0 30px;
-    background-color:rgb(244,97,36);
-    font-size: 25px;
-    font-weight:600;
-    line-height:75px;
-    color:white;
-}
-.s4-3b2{
-    margin-top:30px;
-    position:absolute;
-    right:0px;
-}
-.s4-c2{
-width:765px;
-height:700px;
-object-fit: cover;
-object-position: 100% 50%
-}
-.s4-4b2{
-    width:371px;
-    height:736px;
-    background-color:rgb(244,97,36);
-    opacity:0.1;
-    position:absolute;
-    right:550px;
-    top:440px;
-}
-.s4-5b2{
-    width:430px;
-    font-size:15px;
-    font-weight:600;
-    font-family: 'ヒラギノ角ゴシック';
-    text-align:center;
-    position:absolute;
-    right:400px;
-    top:980px;
-}
-    /* セクション４ タイトル以外　二つ目*/
-.s4-b3, .s4-2b3{
-    display:inline-block;
-    margin:15px 0;
-    padding:0 30px;
-    background-color:rgb(244,97,36);
-    font-size: 25px;
-    font-weight:600;
-    line-height:75px;
-    color:white;
-}
-.s4-3b3{
-    margin-top:30px;
-    position:absolute;
-    left:0px;
-    width:765px;
-    height:700px;
-    overflow: hidden;
-}
-.s4-c3{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -38%);
+     /* 次のセクションとの間隔開ける */
+     .s4{
+        padding-bottom:120px;
     }
-.s4-4b3{
-    width:371px;
-    height:736px;
-    background-color:rgb(244,97,36);
-    opacity:0.1;
-    position:absolute;
-    left:550px;
-    top:440px;
-}
-.s4-5b3{
-    width:430px;
-    font-size:15px;
-    font-weight:600;
-    font-family: 'ヒラギノ角ゴシック';
-    text-align:center;
-    position:absolute;
-    left:400px;
-    top:980px;
-}
+    /* セクション４ タイトル以外の事例大枠二つ　一つ目　一部二つ目も共通*/
+    .s4-a2 , .s4-a3{
+        position:relative;
+        height:1220px;
+        padding-top:40px;
+    }
+    /* セクション４　事例の中身　最初の文章２行 一つ目二つ目共通*/
+    .s4-b2, .s4-2b2 , .s4-b3, .s4-2b3{
+        width:fit-content;
+        margin-bottom:10px;
+        padding:0 30px;
+        font-size: 25px;
+        font-weight:600;
+        line-height:75px;
+    }
+    /* セクション４　事例の中身　最初の文章２行　二つ目だけ右に寄せる */
+    .s4-b3, .s4-2b3{
+        margin-right:0px;
+        margin-left:auto;
+    }
+    /* セクション４　事例の中身　画像等の重ね合わせ　一つ目 */
+    .s4-3b2{
+        margin-top:30px;
+        position:absolute;
+        right:0px;
+    }
+    .s4-c2{
+        width:765px;
+        height:700px;
+        object-fit: cover;
+        object-position: 100% 50%
+    }
+    .s4-4b2{
+        width:371px;
+        height:736px;
+        opacity:0.1;
+        position:absolute;
+        right:550px;
+        top:470px;
+    }
+    .s4-5b2{
+        width:430px;
+        font-size:15px;
+        font-weight:600;
+        font-family: 'ヒラギノ角ゴシック';
+        text-align:center;
+        position:absolute;
+        right:400px;
+        top:990px;
+    }
+        /* セクション４　事例の中身　画像等の重ね合わせ　２つ目*/
+    .s4-3b3{
+        margin-top:30px;
+        position:absolute;
+        left:0px;
+        width:765px;
+        height:700px;
+        overflow: hidden;
+    }
+    .s4-c3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -38%);
+        }
+    .s4-4b3{
+        width:371px;
+        height:736px;
+        opacity:0.1;
+        position:absolute;
+        left:550px;
+        top:470px;
+    }
+    .s4-5b3{
+        width:430px;
+        font-size:15px;
+        font-weight:600;
+        font-family: 'ヒラギノ角ゴシック';
+        text-align:center;
+        position:absolute;
+        left:400px;
+        top:980px;
+    }
 
 /* セクション5 */
 .s5{
@@ -984,19 +991,19 @@ object-position: 100% 50%
     opacity:0.39;
     position:absolute;
     left:420px;
-    top:190px;
+    top:180px;
     z-index: -1;
 }
 .s6-3b2{
     width:712px;
-    height:auto;
+    height:370px;
     padding:10px 141px 10px 141px;
     font-weight:600;
     font-family: 'ヒラギノ角ゴシック';
     text-align:center;
     position:absolute;
     left:330px;
-    top:650px;
+    top:770px;
     background-color:white;
 }
 .s6-2c2{
@@ -1011,10 +1018,18 @@ object-position: 100% 50%
     font-family: 'ヒラギノ角ゴシック';
     line-height: 150%;
 }
+.shatyo-name{
+    font-size: 25px;
+    font-weight:600;
+    font-family: 'ヒラギノ角ゴシック';
+    width:fit-content;
+    position:absolute;
+    left:5%;
+}
 .s6-4b2{
     position:absolute;
-    top:900px;
-    left:940px;
+    top:970px;
+    left:960px;
 }
 
 /* セクション７ */
@@ -1161,7 +1176,7 @@ object-position: 100% 50%
 /* タイトル　レスポンシブ */
     /* 上部を少しあける */
     .title-wrapper{
-        padding-top: 20px;
+        padding-top: 45px;
     }
     /* タイトル全体　角度のばらつき　これによって下との間隔も変える */
        /* 元の角度解除 */
@@ -1203,7 +1218,7 @@ object-position: 100% 50%
         /* メインタイトル　後ろ文字　上下位置とサイズ */
         .main-backTitle{
             font-size: 30px;
-            top:38px;
+            top:63px;
         }
         /* メインタイトル　後ろ文字　左右位置　右側か左側か */
         .backTitle-right{
@@ -1215,19 +1230,27 @@ object-position: 100% 50%
 
 
 /* セクション２　レスポンシブ */
-       .s2-b1{
-            width:auto;
-            font-size: 15px;
-            line-height: 150%;
-        }
-        .s2-2b1{
-            width: 150px;
-            height:105px;
-        }
-        .s2-3b1{
-            width:250px;
-            height:auto;
-        }
+    /* 次のセクションとの間隔調整 */
+    .s2{
+        padding-bottom:60px;
+    }   
+    /* セクション２　上部 */
+    .s2-b1{
+        width:240px;
+        font-size: 17px;
+        line-height: 150%;
+    }
+    .s2-2b1{
+        width: 150px;
+        height:105px;
+    }
+    .s2-3b1{
+        width:324px;
+        font-size: 23px;
+        height:auto;
+    }
+
+
 
         .s3{
          height: 2800px;   
@@ -1271,10 +1294,13 @@ object-position: 100% 50%
 
         } 
         .s2-2b2{
-            width:250px;
+            width:240px;
+            font-size: 18px;
         }        
         .s2-3b2{
-            width:280px;
+            width:324px;
+            font-size:16px;
+            font-weight: 300;
         }
         .s2-2c2 , .s2-3c2{
             font-size: 20px;
@@ -1283,54 +1309,48 @@ object-position: 100% 50%
         }
 
 /* セクション４ レスポンシブ*/
+        /* 次のセクションとの間隔調整 */
+        .s4{
+            padding-bottom:60px;
+        }
+        /* 事例ごとのブロック高さ */
         .s4-a2 ,.s4-a3{
-            height:900px;
+            padding-top:10px;
+            height:820px;
         }
-        .s4-b2, .s4-2b2 , .s4-b3 , .s4-2b3{
-            margin:10px 0;
-            padding:0 15px;
+        /* 事例ごとの二行の文章 */
+        .s4-b2, .s4-2b2 , .s4-b3, .s4-2b3{
+            margin-bottom:15px;
             font-size: 15px;
-            line-height:30px;
-            color:white;
+            line-height:50px;
         }
-        .s4-b2{
-            width:240px;
+        /* 携帯用画像の切り抜き 一つ目*/
+        .s4-3b2{
+            margin-top:10px;
         }
-        .s4-2b2{
-            width:320px;
-        }
-        /* 携帯用画像の切り抜き */
         .s4-c2{
             width:360px;
             height:616px;
             object-position: 88% 0%;
         }
         .s4-4b2{
-            width:300px;
-            height:300px;
-            background-color:rgb(244,97,36);
+            width:267px;
+            height:287px;
             opacity:0.1;
             position:absolute;
-            right:40px;
-            top:300px;
+            right:18px;
+            top:520px;
+            opacity:0.47;
         }
         .s4-5b2{
-            width:300px;
-            height:300px;
-            right:50px;
-            top:300px;
+            width:230px;
+            right:38px;
+            top:510px;
             color:white;
         }
-
-        .s4-b3{
-            width:240px;
-        }
-        .s4-2b3{
-            width:320px;
-        }
-        /* 携帯用画像の切り抜き */
+        /* 携帯用画像の切り抜き 二つ目*/
         .s4-3b3{
-            margin-top:20px;
+            margin-top:10px;
             width:360px;
             height:615px;
         }
@@ -1342,19 +1362,18 @@ object-position: 100% 50%
             transform: translate(-53%, -56%);
             }
         .s4-4b3{
-            width:300px;
-            height:300px;
-            background-color:rgb(244,97,36);
-            opacity:0.1;
+            width:270px;
+            height:287px;
+            opacity:0.47;
             position:absolute;
-            left:40px;
-            top:300px;
+            left:18px;
+            top:510px;
         }
         .s4-5b3{
-            width:300px;
-            height:300px;
-            left:50px;
-            top:300px;
+            width:230px;
+            height:3250px;
+            left:38px;
+            top:510px;
             color:white;
         }
 
@@ -1383,44 +1402,61 @@ object-position: 100% 50%
    
 
 /* セクション６ レスポンシブ */
+       .s6{
+           height:880px;
+       }
         .s6-b2{
             position:absolute;
-            top:30px;
-            left:20px;
+            top:140px;
+            left:18px;
         }
         .s6-c2{
-            width:330px;
+            width:324px;
         }
         .s6-2b2{
-            width:360px;
-            height:640px;
-            position:static;
+            display:none;
         }
         .s6-3b2{
-            width:280px;
-            padding:10px 10px 10px 10px;
-            position:static;
+            width:274px;
+            height:auto;
+            padding:10px 30px 60px 30px;
+            position:absolute;
+            top:80px;
+            left:58px;
             margin-top:260px;
             margin-right:auto;
             margin-left:auto;
+            z-index: 4;
+        }
+        .s6-2c2{
+            font-size:18px;
+        }
+        .s6-3c2{
+            font-size:16px;
+            font-weight:300;
+        }
+        .shatyo-name{
+            font-size: 18px;
         }
         .s6-4b2{
             position:absolute;
-            top:200px;
-            left:280px;
+            top:740px;
+            left:auto;
+            right:0px;
+            z-index: 5;
         }
         .s6-4c2{
-            width:40px;
-            height:60px;
+            width:80px;
+            height:100px;
         }
 
 /* セクション７　レスポンシブ */
     /* 上部アイコンとメッセージ */
     .s7-a2{
-        height:120px;
-        background-color: red;
+        height:auto;
     }
     .s7-b2{
+        align-self: flex-end;
         left:auto;
         right:18px;
     }
@@ -1429,11 +1465,13 @@ object-position: 100% 50%
         height:110px;
     }
     .s7-2b2{
-        display:none;
+        width:220px;
+        height:90%;
+        margin-left:20px;
+        font-size:12px;
+        font-weight: 300;
     }
-    .s7-2b2-2{
-        display:block;
-    }
+
     /* フォーム全体 */
     .s7-a3{
         max-width:324px;
