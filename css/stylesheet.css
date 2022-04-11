@@ -351,9 +351,9 @@ object-position: 100% 50%
   position: relative;
   background:rgba(244, 97, 36, 0.1);
   height: 1280px;
-  display: flex;
-
-  
+}
+.project-wrapper{
+    display:flex;
 }
 /* セクション5タイトル */
 .s5-a1{
@@ -1361,11 +1361,11 @@ object-position: 100% 50%
 /* セクション5 レスポンシブ */
       
        .s5{
-           display: flex;
-           flex-wrap: wrap;
            height: 1800px;
        }
-
+       .project-wrapper{
+           flex-wrap: wrap;
+       }
         .s5-b2{
           position: relative;
           top: 60vh;  
