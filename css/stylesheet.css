@@ -46,6 +46,8 @@
         .degree19{
             transform: rotateZ(19deg);
             padding-bottom: 90px;
+            position: relative;
+            top: 5%;
         }
 
     /* タイトルの中身 */
@@ -99,6 +101,24 @@
         .backTitle-left{
             left:-7px;
         }
+
+/* セクション1 */    
+.s1{
+    width: 100%;
+    height: 100vh;
+    }
+    
+.s1 img { 
+    width: 100%; 
+    height:100vh;
+    }
+    
+    
+body{
+    margin:0
+    }
+
+
 /* セクション２ */
     /* 次のセクションとの間隔開ける */
     .s2{
@@ -130,7 +150,7 @@
         line-height:75px;
     }
 
-    /* セクション２の下部 */
+   /* セクション２の下部 */
     .s2-2b2{
         width:375px;
         margin-left:auto;
@@ -153,21 +173,6 @@
     }
 
 
-/* セクション1 */    
-.s1{
-    width: 100%;
-    height: 100vh;
-    }
-    
-.s1 img { 
-    max-width: 100%; 
-    height:100vh;
-    }
-    
-    
-body{
-    margin:0
-    }
 
 /* セクション3 */    
 .s3{
@@ -181,33 +186,39 @@ body{
 .s3-a2{
     display: flex;
     flex-wrap:wrap;
-    gap:20px;
-    width:800px;
+    gap:50px;
+    width:810px;
     margin-left:auto;
     margin-right:auto;
+    position: relative;
+    top: 15vh;
     }
 
 .s3-a2 div{
     position: relative; 
-    top: 430px; 
-    margin: auto;
-    text-align: right;
        
     }
 
 
 .s3-a3{
 position: relative;
-text-align: center;
-top:500px;
-font-family: "ヒラギノ角ゴシック";
-}    
+top:-170px;
+width: 680px;
+margin-left:auto;
+margin-right: auto;
+font-size: 25px;
+font-weight: 600;
+font-family: 'ヒラギノ角ゴシック';
+line-height: 150%;
+} 
 
 
 .s3-b2{
     width: 250px;
     height:320px;
-    background-color:#E3F7BF
+    background-color:#E3F7BF;
+    margin:10px;
+    
 }
 
 
@@ -257,14 +268,54 @@ font-family: "ヒラギノ角ゴシック";
 
 
 .s3-a4{
-position: relative;
-left:70%;
-top:20%;
+position: absolute;
+left:76%;
+top:30%;
 width:200px;
+}
+
+.boxnumber{
+font-family: "Hiragino Kaku Gothic";
+font-size: 50px;
+font-weight: 600;
+position: absolute;
+top: -30%;
+right: 0px;
+
+}
+
+.topbox{
+display: flex;
+flex-wrap: wrap;    
+}
+
+.botombox{
+display: flex;
+flex-wrap: wrap; 
+}
+
+.boxtext{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'ヒラギノ角ゴシック';
+    line-height: 150%;
+    position: absolute;
+    top: 30%;
+    left: 3%;  
+}
+
+.allbox{
+position: absolute;
+top: 0px;
+
 }
 
 
 /* セクション４ */
+    /* セクション４ タイトル以外　一つ目　一部二つ目も共通*/
+
      /* 次のセクションとの間隔開ける */
      .s4{
         padding-bottom:120px;
@@ -352,6 +403,7 @@ width:200px;
         left:400px;
         top:980px;
     }
+
 
 /* セクション5 */
 .s5{
@@ -448,7 +500,7 @@ width:200px;
   flex-wrap: wrap;
   gap:20px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 20px;
 }
 
 .s5-b2{
@@ -458,7 +510,7 @@ width:200px;
   position:relative;
   border: 1px solid black; /* 境界線を実線で指定 */
   border-radius: 20px; /* ボックスの四つ角を丸くする */
-  top: 500px;
+  top: 400px;
 
 }
 
@@ -480,7 +532,7 @@ width:200px;
     position:relative;
     border: 1px solid black; /* 境界線を実線で指定 */
     border-radius: 20px; /* ボックスの四つ角を丸くする */
-    top: 500px;
+    top: 400px;
     margin-right: auto;
     }
 
@@ -971,6 +1023,17 @@ width:200px;
     background:black;
   }
      
+  .jump{
+   text-decoration: none;  
+   text-align: center;  
+   height:0px;
+   line-height:0px;  
+   font-family: "Hiragino Kaku Gothic";
+   font-size:18px;
+   font-weight: 600;
+   color: white; 
+
+  }
     
 
 /* セクション６ */
@@ -1200,6 +1263,8 @@ width:200px;
         .degree17{
             transform: rotateZ(17deg);
             padding-bottom: 30px;
+            position: relative;
+            top:5vh;
         }
     /* タイトルの中身のパーツ */
         /* サブタイトル　サイズ */
@@ -1228,8 +1293,35 @@ width:200px;
             left:-3px;
         }
 
+/* セクション1　レスポンシブ */
+
+        .s1 img{
+            max-width: 100%;
+            height: 100vh
+          }
+
 
 /* セクション２　レスポンシブ */
+       
+        
+  
+        .s2-2b2{
+            width:240px;
+            font-size: 18px;
+        }        
+        .s2-3b2{
+            width:324px;
+            font-size:16px;
+            font-weight: 300;
+        }
+        .s2-2c2 , .s2-3c2{
+            font-size: 20px;
+            font-weight:900;
+            line-height: 100%;
+
+        }
+ 
+
     /* 次のセクションとの間隔調整 */
     .s2{
         padding-bottom:60px;
@@ -1252,61 +1344,51 @@ width:200px;
 
 
 
+
+/* セクション3 レスポンシブ*/
+
+        .topbox{
+         display: flex;
+         flex-direction: column;
+        }
+
+        .botombox{
+         display: flex;
+         flex-direction: column;
+        }
+
         .s3{
-         height: 2800px;   
-        }
+            height: 2800px;   
+           }
 
-        .s1 img{
-          max-width: 100%;
-          height: 100vh
-        }
-
-
-        .s3-a2{
-            display:flex;
-            flex-flow: column;
-            width: 150px;
-            position: relative;
-            right:50px;
-            font-family: "ヒラギノ角ゴシック";
-        }
 
         .s3-c1{
             top: 50px;
             
         }
-        .s3-a2 div{
-           top:300px;
-           text-align: right;
 
-        }
-
-        .s3-a3{
-            position: relative;
-            top:400px;
-        }
+        .s3-a3 {
+         width: 300px;
+         position: relative;
+         top: -90vh;
+            
+        }    
 
         .s3-a4{
-        position: relative;
+        position: absolute;
         width: 150px;    
-        left:50%;
-        top:16%;
-
+        left:60%;
+        top:74%;
         } 
-        .s2-2b2{
-            width:240px;
-            font-size: 18px;
-        }        
-        .s2-3b2{
-            width:324px;
-            font-size:16px;
-            font-weight: 300;
-        }
-        .s2-2c2 , .s2-3c2{
-            font-size: 20px;
-            font-weight:900;
-            line-height: 100%;
-        }
+
+
+        .allbox{
+        left:5%;
+        top: 15vh;
+
+
+
+
 
 /* セクション４ レスポンシブ*/
         /* 次のセクションとの間隔調整 */
@@ -1380,21 +1462,21 @@ width:200px;
 /* セクション5 レスポンシブ */
       
        .s5{
-           height: 1800px;
+           height: 1600px;
        }
        .project-wrapper{
            flex-wrap: wrap;
        }
         .s5-b2{
           position: relative;
-          top: 60vh;  
+          top: 20vh;  
         }
 
        .s5-b3{
          display: flex;
          flex-wrap: wrap;
          position:relative;
-         top: 30vh;
+         top: 40vh;
          left: 6px;
 
        }
