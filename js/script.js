@@ -22,9 +22,11 @@ btn.addEventListener('click', function() {
     const email2 = 'hamamura.ryohe@rexcross.com';
     const familyName = document.getElementById("familyName").value;
   
-    const text = `${familyName}様<br>お問合せありがとうございます。<br><br><br>
+    const text = `${familyName}様<br>資料請求ありがとうございます。<br><br><br>
     ========================<br>
-    Rexcross
+    　株式会社〇〇<br>
+    　〒100-0001
+    　東京都千代田区千代田1-1<br>
     ========================`;
   
     sendDoc(email,email2,text);
