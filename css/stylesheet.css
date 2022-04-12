@@ -105,14 +105,14 @@
 
 /* セクション1 */    
 .s1{
-    width: 100%;
-    height: 100vh;
+      max-width: 100px;
+      height: 720px;
     }
-    
-.s1 img { 
-    width: 100%; 
-    height:100vh;
-    }
+.s1 img{
+     max-width: 100px;
+     height: 720px;
+  }
+  
     
     
 body{
@@ -208,13 +208,14 @@ body{
 .s3-a3{
 position: relative;
 top:200px;
-width: 680px;
+width: 430px;
 margin-left:auto;
 margin-right: auto;
-font-size: 25px;
+font-size: 15px;
 font-weight: 600;
 font-family: 'ヒラギノ角ゴシック';
 line-height: 150%;
+text-align: center;
 } 
 
 
@@ -308,16 +309,28 @@ top: 50px;
     font-size: 20px;
     font-weight: 600;
     font-family: 'ヒラギノ角ゴシック';
-    line-height: 150%;
-    position: absolute;
-    top: 60%;
-    left: 3%;  
+    text-align: center;
+    padding: 190px 0;
+   
 }
 
 .allbox{
 position: absolute;
 top: 0px;
 
+}
+
+.whitecircle{
+position: absolute;
+top: 25px;
+right: 35px;
+
+}
+
+.boximages{
+    position: absolute;
+    top: 30px;
+    right: 20px;
 }
 
 
@@ -509,6 +522,8 @@ top: 0px;
   gap:20px;
   margin-left: auto;
   margin-right: 30px;
+  position: relative;
+
 }
 
 .s5-b2{
@@ -1306,13 +1321,6 @@ top: 0px;
             left:-3px;
         }
 
-        .wrap{
-         overflow: hidden;   
-        }
-
-        body{
-        min-width: 360px;    
-        }
 
 /* セクション1　レスポンシブ */
 
@@ -1371,12 +1379,12 @@ top: 0px;
         }
 
         .botombox{
-         display: flex;
-         flex-direction: column;
+         top: 0px;
+         left:60px;
         }
 
         .s3{
-            height: 2800px;   
+            height: 2400px;   
            }
 
 
@@ -1388,29 +1396,64 @@ top: 0px;
         .s3-a2{
          max-width: 100%;
          position: relative;
-         left: 7%;
+         top: 0%;
         }
 
         .s3-a3 {
-         width: 300px;
+         width: 250px;
          position: relative;
-         top: 60vh;
-            
+         top: 5%;
+         font-family:'ヒラギノ角ゴシック';
+         font-size: 16px;
+         font-weight: 300;
+
         }    
 
         .s3-a4{
         position: absolute;
-        width: 150px;    
-        left:60%;
-        top:74%;
+        width: 90px;    
+        height: 125px;
+        top:70%;
         } 
-
+    
+        .s3-b2{
+        margin: 20px;
+        width:283px;
+        height: 350px;
+    
+        }
 
         .allbox{
-        left:5%;
+        right:10%;
         top: 15vh;
         }
-    
+
+
+        .boxnumber{
+        font-family: "Hiragino Kaku Gothic";   
+        font-size: 25px;
+        font-size: 600;
+        position: absolute;
+        top: -15%;
+        }
+
+        .boxtext{
+         padding: 220px 0;
+        }
+
+        .whitecircle{
+          position: absolute;
+          top: 50px;
+          right:50px;
+        }
+
+        .boximages{
+          position: absolute;
+          top: 55px;
+          right:37px;
+        }
+
+
 
 
 
@@ -1487,10 +1530,15 @@ top: 0px;
       
        .s5{
            height: 1600px;
-       }
+           background: -moz-linear-gradient(top, #fff,#EA5D23 40%,  #FFFFFF);
+           background: -webkit-linear-gradient(top, #fff,#EA5D23 40%, #FFFFFF);
+           background: linear-gradient(to bottom, #fff,#EA5D23 40%, #FFFFFF);
+        }
+
        .project-wrapper{
            flex-wrap: wrap;
        }
+
         .s5-b2{
           position: relative;
           top: 20vh;  
@@ -1503,7 +1551,6 @@ top: 0px;
          position:relative;
          top: 40vh;
          left: 6px;
-
        }
 
    
