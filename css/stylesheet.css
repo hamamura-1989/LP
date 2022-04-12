@@ -1068,7 +1068,8 @@ right: 35px;
 .s6-b2{
     position:absolute;
     top:300px;
-    left:250px;
+    left:50%;
+    transform:translate(-50%);
 }
 .s6-2b2{
     width:773px;
@@ -1082,8 +1083,8 @@ right: 35px;
 }
 .s6-3b2{
     width:712px;
-    height:370px;
-    padding:10px 141px 10px 141px;
+    height:auto;
+    padding:10px 141px 70px 141px;
     font-weight:600;
     font-family: 'ヒラギノ角ゴシック';
     text-align:center;
@@ -1110,11 +1111,12 @@ right: 35px;
     font-family: 'ヒラギノ角ゴシック';
     width:fit-content;
     position:absolute;
-    left:5%;
+    right:5%;
+    margin-top:10px;
 }
 .s6-4b2{
     position:absolute;
-    top:970px;
+    top:945px;
     left:960px;
 }
 
@@ -1426,6 +1428,7 @@ right: 35px;
         top: 15vh;
         }
 
+
         .boxnumber{
         font-family: "Hiragino Kaku Gothic";   
         font-size: 25px;
@@ -1560,7 +1563,6 @@ right: 35px;
         .s6-b2{
             position:absolute;
             top:140px;
-            left:18px;
         }
         .s6-c2{
             width:324px;
@@ -1571,10 +1573,11 @@ right: 35px;
         .s6-3b2{
             width:274px;
             height:auto;
-            padding:10px 30px 60px 30px;
+            padding:10px 30px 40px 30px;
             position:absolute;
             top:80px;
-            left:58px;
+            left:50%;
+            transform:translate(-50%);
             margin-top:260px;
             margin-right:auto;
             margin-left:auto;
@@ -1589,12 +1592,14 @@ right: 35px;
         }
         .shatyo-name{
             font-size: 18px;
+            right:10%;
+            margin-top:5px;
         }
         .s6-4b2{
             position:absolute;
-            top:740px;
+            top:715px;
             left:auto;
-            right:0px;
+            right:2%;
             z-index: 5;
         }
         .s6-4c2{
