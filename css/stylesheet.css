@@ -1391,7 +1391,7 @@ right: 35px;
 
 .s1-textbox1{
     position: absolute;
-    top: 125px;
+    top: 115px;
     left: 20px;
     color: #FFFFFF;
     font-size: 30px;
@@ -1401,7 +1401,7 @@ right: 35px;
 
 .s1-textbox2{
     position: absolute;
-    top: 290px;
+    top: 270px;
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 600;
@@ -1419,6 +1419,7 @@ right: 35px;
     left:20px; 
 }
 
+
 /*スマホでは有効*/
 .px_hid{
     display: block;
@@ -1429,6 +1430,53 @@ right: 35px;
    display: none; 
 }
 
+.s1-2-1{
+   position: absolute; 
+   top: 10px; 
+   left: 120px;
+   z-index: 3;
+}
+
+.s1-2-2{
+   position: absolute;
+   top: 25px;
+   left: 130px;
+   z-index: 2;
+}
+
+.s1-2-3{
+    position: absolute;
+    top: 70px;
+    left: 170px;
+    z-index: 3;
+}
+
+.s-1-text4{
+   position: absolute;
+   font-size: 15px;
+   font-weight: 600;
+   font-family: 'Hiragino Kaku Gothic ProN'; 
+   color: #FFFFFF;
+   top: -45px;
+   left: 45px;
+}
+
+.s1-1-2-4{
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    left: -99px;
+}
+
+.s-1-text5{
+    color: #FFFFFF;
+    font-family: 'Hiragino Kaku Gothic ProN';
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    left: 5px;
+
+}
 
 
 /* セクション２　レスポンシブ */
@@ -1529,7 +1577,7 @@ right: 35px;
 
         .allbox{
         right:10%;
-        top: 15vh;
+        top: 5vh;
         }
 
 
