@@ -105,15 +105,60 @@
 
 /* セクション1 */    
 .s1{
-      max-width: 100px;
+      max-width: 100%;
       height: 720px;
+      overflow: hidden;
+      position: relative;
     }
-.s1 img{
-     max-width: 100px;
-     height: 720px;
-  }
-  
     
+
+.img-S1{
+     width: 1280px;
+}
+
+.s1-textbox1{
+    position: absolute;
+    top: -50px;
+    color: #FFFFFF;
+    font-size: 70px;
+    font-weight: 600;
+    width: 750px;
+}
+
+.s1-textbox2{
+    position: absolute;
+    top: 210px;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.s1-textbox3{
+    position: absolute;
+    top: 450px;
+    color: #FFFFFF;
+    font-size: 70px;
+    font-weight: 600;
+    width: 1280px;
+  
+}
+
+/*PCでは、無効*/
+.pc_hid{
+    display: none;
+  }
+
+/*PCでは、有効*/
+.pc_hid2{
+    display: block;
+}
+
+
+
+.s1-2{
+    display: none;
+}
     
 body{
     margin:0;
@@ -1322,8 +1367,67 @@ right: 35px;
         }
 
 
-/* セクション1　レスポンシブ */
 
+
+/* セクション1　レスポンシブ */
+.s1{
+    width:360px;
+    height:640px;
+    display: none;
+    
+}
+.img-S1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%, -56%);
+    
+    }
+
+.s1-2{
+   display: block; 
+}
+
+
+.s1-textbox1{
+    position: absolute;
+    top: 125px;
+    left: 20px;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    width: 188px;
+}
+
+.s1-textbox2{
+    position: absolute;
+    top: 290px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    left: 20px;
+
+}
+
+.s1-textbox3{
+    position: absolute;
+    top: 450px;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    width: 334px;
+    left:20px; 
+}
+
+/*スマホでは有効*/
+.px_hid{
+    display: block;
+}
+
+/*スマホでは無効*/
+.pc_hid2{
+   display: none; 
+}
 
 
 
