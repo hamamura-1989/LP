@@ -1309,7 +1309,7 @@ right: 35px;
 /* タイトル　レスポンシブ */
     /* 上部を少しあける */
     .title-wrapper{
-        padding-top: 45px;
+        padding-top: 25px;
         margin-right:0px;
     }
     /* タイトル全体　角度のばらつき　これによって下との間隔も変える */
@@ -1356,7 +1356,7 @@ right: 35px;
         /* メインタイトル　後ろ文字　上下位置とサイズ */
         .main-backTitle{
             font-size: 30px;
-            top:63px;
+            top:43px;
         }
         /* メインタイトル　後ろ文字　左右位置　右側か左側か */
         .backTitle-right{
