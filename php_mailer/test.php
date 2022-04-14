@@ -1,28 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<?php
-// echo で出力する方法
-echo '<meta charset="UTF-8">';
-// 文字列リテラルとして書く方法（このままでは出力されません）
-$title = 'php で HTML を書く方法';
-// 文字列操作でつなげることも出来ます
-echo "<title>{$title}</title>";
-// 一時的に php タグから脱出する方法
-?>
-</head>
-<body>
-送信完了画面です
-<?php
-$name = $_POST['familyName'];
-echo $name;
-?>
-</body>
-</html>
-
-
-
-
 <?php
 // HPMailer のクラスをグローバル名前空間（global namespace）にインポート
 // スクリプトの先頭で宣言する必要があります
@@ -37,7 +12,7 @@ use League\OAuth2\Client\Provider\Google;//  ### 追加 ###
 
 
 // Composer のオートローダーの読み込み（ファイルの位置によりパスを適宜変更）
-require '../php_mailer/vendor/autoload.php';
+require 'vendor/autoload.php';
 
 
 //mbstring の日本語設定
@@ -56,7 +31,7 @@ $mail->Encoding = "7bit";
 
 try {
   //サーバの設定
-  $mail->SMTPDebug = 0;  // デバグの出力を有効に（テスト環境での検証用）
+  $mail->SMTPDebug = SMTP::DEBUG_SERVER;  // デバグの出力を有効に（テスト環境での検証用）
   $mail->isSMTP();   // SMTP を使用
   $mail->Host       = 'smtp.gmail.com';  // ★★★ Gmail SMTP サーバーを指定
   $mail->SMTPAuth   = true;   // SMTP authentication を有効に
@@ -122,7 +97,7 @@ try {
   //メール表題（タイトル）
   $mail->Subject = mb_encode_mimeheader('問い合わせ完了メール'); 
   //本文（HTML用）
-  $mail->Body  = mb_convert_encoding($name,"JIS","UTF-8");  
+  $mail->Body  = mb_convert_encoding('ああああああああああああああああああああ',"JIS","UTF-8");  
   //テキスト表示の本文
   $mail->AltBody = mb_convert_encoding('プレインテキストメッセージ non-HTML mail clients',"JIS","UTF-8"); 
  
@@ -135,5 +110,3 @@ try {
 } catch (Exception $e) {
   echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
-
-?>
