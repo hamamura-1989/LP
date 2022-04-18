@@ -1279,8 +1279,19 @@ right: 35px;
         font-size:50px;
     }
     .confirm .confirm-message{
-        font-size:25px;
+        max-width:80%;
+        margin-right:auto;
+        margin-left:auto;
     }
+    .confirm .confirm-message p{
+        font-size:25px;
+        margin-bottom:0px;
+    }
+    .confirm .confirm-message p:nth-child(2){
+        margin-bottom:0px;
+        margin-top:0px;
+    }
+
     /* フォーム確認画面の下部 */
         /* フォーム全体 */
         .confirmForm{
@@ -1302,9 +1313,8 @@ right: 35px;
             }
             /* 行ごとの色付け */
             .confirmForm-item1 , .confirmForm-item3 , .confirmForm-item5{
-                    background-color:rgba(244,97,36,0.2);
+                    background-color:rgba(244,97,36,0.1);
             }
-            
                 /* フォーム確認の左側　１、２、３、４、５、６つ目 */
             .confirmForm-item-left{
                 width:100%;

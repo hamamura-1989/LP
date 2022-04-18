@@ -512,8 +512,12 @@
             /* フォーム確認画面の上部 */
             .confirm h2{
                 font-size:25px;
+                margin-top:60px;
             }
             .confirm .confirm-message{
+                max-width:85%;
+            }
+            .confirm .confirm-message p{
                 font-size:15px;
             }
             /* フォーム確認画面の下部 */
@@ -533,7 +537,7 @@
                     }
                         /* フォーム確認の左側　１、２、３、４、５、６つ目 */
                     .confirmForm-item-left{
-                        padding-left:5px;
+                        padding:5px 0px 5px 10px;
                         font-size:15px;
                         background-color:rgba(244,97,36,0.2);
                         max-width:none;
