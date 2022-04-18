@@ -354,50 +354,50 @@
             </div>
         </div>   
         <!-- 7つ目のコンテンツ　フォーム部分 -->
-        <form class="s7-a3" action="/php/confirm.php" method="post">
-            <div class="s7-b3"><!-- お名前 -->
-                <p class="s7-c3">
-                    <span class="s7-d3">必須</span>お名前
+        <form class="form" action="/php/confirm.php" method="post">
+            <div class="form-item form-item1"><!-- お名前 -->
+                <p class="form-item-left form-item-left1">
+                    <span class="form-item-leftLabel">必須</span>お名前
                 </p> 
-                <input type="text" class="s7-2c3" name="familyName" id="familyName" placeholder="例）山田">
-                <input type="text" class="s7-3c3" name="firstName" id="firstName" placeholder="例）太郎">
+                <input type="text" class="form-item-right1-1" name="familyName" id="familyName" placeholder="例）山田" required>
+                <input type="text" class="form-item-right1-2" name="firstName" id="firstName" placeholder="例）太郎" required>
             </div>
-            <div class="s7-2b3"><!-- ふりがな -->
-                <p class="s7-4c3">
-                    <span class="s7-2d3">必須</span>ふりがな
+            <div class="form-item form-item2"><!-- ふりがな -->
+                <p class="form-item-left form-item-left2">
+                    <span class="form-item-leftLabel">必須</span>ふりがな
                 </p> 
-                <input type="text" class="s7-5c3" name="familyHiraganaName" id="familyHiraganaName" placeholder="例）やまだ">
-                <input type="text" class="s7-6c3" name="firstHiraganaName" id="firstHiraganaName" placeholder="例）たろう">
+                <input type="text" class="form-item-right2-1" name="familyHiraganaName" id="familyHiraganaName" placeholder="例）やまだ" pattern="(?=.*?[\u3041-\u309F])[\u3041-\u309F\s]*" required>
+                <input type="text" class="form-item-right2-2" name="firstHiraganaName" id="firstHiraganaName" placeholder="例）たろう" pattern="(?=.*?[\u3041-\u309F])[\u3041-\u309F\s]*" required>
             </div>
-            <div class="s7-3b3"><!-- 電話番号 -->
-               <p class="s7-7c3">
-                   <span class="s7-3d3">必須</span>電話番号
+            <div class="form-item form-item3"><!-- 電話番号 -->
+               <p class="form-item-left form-item-left3">
+                   <span class="form-item-leftLabel">必須</span>電話番号
                </p> 
-               <input type="text" class="s7-8c3" name="phoneNumber" id="phoneNumber" placeholder="例）000-0000-0000">
+               <input type="text" class="form-item-right3" name="phoneNumber" id="phoneNumber" placeholder="例）000-0000-0000" pattern = "^0([0-9]-[0-9]{4}|[0-9]{2}-[0-9]{3}|[0-9]{3}-[0-9]{2}|[0-9]{4}-[0-9]|[0-9]{2}-[0-9]{4})-[0-9]{4}$" required>
             </div>
-            <div class="s7-4b3"><!-- メールアドレス -->
-                <p class="s7-9c3">
-                    <span class="s7-4d3">必須</span>メールアドレス
+            <div class="form-item form-item4"><!-- メールアドレス -->
+                <p class="form-item-left form-item-left4">
+                    <span class="form-item-leftLabel">必須</span>メールアドレス
                 </p> 
-                <input type="email" class="s7-10c3" name="email" id="email" placeholder="例）○○○○○○○○＠gmail.comなど">
+                <input type="email" class="form-item-right4" name="email" id="email" placeholder="例）○○○○○○○○＠gmail.comなど" pattern = "^[a-zA-Z0-9_+-]+(.[a-zA-Z0-9_+-]+)*@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$" required>
             </div>
-            <div class="s7-5b3"><!-- 相談内容 -->
-                <p class="s7-11c3">
-                    <span class="s7-5d3">必須</span>ご相談の内容
+            <div class="form-item form-item5"><!-- 相談内容 -->
+                <p class="form-item-left form-item-left5">
+                    <span class="form-item-leftLabel">必須</span>ご相談の内容
                 </p> 
-                <div class="s7-12c3">
-                    <p class="s7-6d3"><input type="checkbox" name="consultation" id="consultation1" value="フリーランス登録について" >フリーランス登録について</p>                
-                    <p class="s7-7d3"><input type="checkbox" name="consultation" id="consultation2" value="事業について" >事業について</p>
-                    <p class="s7-8d3"><input type="checkbox" name="consultation" id="consultation3" value="その他" >その他</p>
+                <div class="form-item-right5" required>
+                    <p class="form-item-right5List"><input type="checkbox" name="consultation[]" class="consultation" value="フリーランス登録について" >フリーランス登録について</p>                
+                    <p class="form-item-right5List"><input type="checkbox" name="consultation[]" class="consultation" value="事業について" >事業について</p>
+                    <p class="form-item-right5List"><input type="checkbox" name="consultation[]" class="consultation" value="その他" >その他</p>
                 </div>
             </div>
-            <div class="s7-6b3"><!-- 本文 -->
-                <p class="s7-13c3">
-                    <span class="s7-9d3">必須</span>本文
+            <div class="form-item form-item6"><!-- 本文 -->
+                <p class="form-item-left form-item-left6">
+                    <span class="form-item-leftLabel">必須</span>本文
                 </p> 
-                <textarea class="s7-14c3" name="consultationContent" id="consultationContent" placeholder="ご相談内容の詳細をご入力ください"></textarea>              
+                <textarea class="form-item-right6" name="consultationContent" id="consultationContent" placeholder="ご相談内容の詳細をご入力ください" required></textarea>              
             </div>
-            <input class="btn_send" id="btn_send" type="submit" name="send" value="送信">
+            <button class="btn_send" id="btn_send" type="submit" name="send">送信</button>
         </form>
      
      </div>
@@ -408,8 +408,10 @@
         </div>
     </div>
 
+    <!-- javascriptでメール送る時に使っていたがやめた -->
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
-    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+
+    <script type="text/javascript" src="js/script.js"></script>
  </div>   
  </body>
 

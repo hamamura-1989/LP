@@ -17,6 +17,8 @@
 .back-green{
     background-color: rgb(134,190,46);
 }
+
+
 /* タイトル */
     /*  タイトル全体 */
         /* 上を少しあける　基準位置とする */
@@ -1195,69 +1197,30 @@ right: 35px;
 
 /* フォーム */
     /* フォーム全体 */
-.s7-a3{
+.form{
     max-width:790px;
     margin-right:auto;
     margin-left:auto;
 }
-    /* フォーム一行　１、２、３、４つ目　　５つ目はpadding弱め */
-.s7-b3 , .s7-2b3 , .s7-3b3 , .s7-4b3 , .s7-6b3{
+    /* フォーム一行　１、２、３、４、５、６つ目*/
+.form-item{
     display: flex;
     align-items: center;
     width:100%;
     padding:20px 5px;
     border-bottom: 3px solid rgb(112, 112, 112);
 }
-.s7-5b3{
-    display: flex;
-    align-items: center;
-    width:100%;
-    padding:15px 5px;
-    border-bottom: 3px solid rgb(112, 112, 112);
-}
-
-    /* フォーム一行　１、2つ目 　スマホ用（PC版では反応しないのでここに置いている）*/
-.s7-b3 , .s7-2b3{
-    flex-wrap: wrap;
-}
 
         /* フォームの左側　１、２、３、４、５、６つ目 */
-.s7-c3 , .s7-4c3 , .s7-7c3 , .s7-9c3 , .s7-11c3 , .s7-13c3{
+.form-item-left{
     width:100%;
     max-width:250px;
     font-size:15px;
     font-weight:300;
     font-family: 'ヒラギノ角ゴシック';
 }
-         /*フォームの右側　１、２つ目  ＋　入力欄の右側だけマージンつける*/
-.s7-2c3 , .s7-3c3 , .s7-5c3 , .s7-6c3{
-    width:100%;
-    max-width:240px;
-    height:47.5px;
-}
-.s7-3c3 , .s7-6c3{
-    margin-left:40px;
-}
-        /*フォームの右側　３、４つ目*/
-.s7-8c3 , .s7-10c3{
-    width:100%;
-    max-width:521px;
-    height:47.5px;
-}
-        /*フォームの右側　5つ目の中身*/
-.s7-6d3 , .s7-7d3 , .s7-8d3{
-    margin-top:0px;
-    margin-bottom:0px;
-}
-        /* フォームの右側　６つ目 */
-.s7-14c3{
-    width:100%;
-    max-width:521px;
-    height:207.5px;
-}
-
-        /* フォームの必須表示 ２、３、４、５、６つ目*/
-.s7-d3 , .s7-2d3 , .s7-3d3 , .s7-4d3 , .s7-5d3 , .s7-9d3{
+        /* フォームの左側　必須表示 １、２、３、４、５、６つ目*/
+.form-item-leftLabel{
     display: inline-block;
     height:18px;
     width: 46px;
@@ -1268,7 +1231,33 @@ right: 35px;
     line-height: 18px;
     margin-right:20px;
 }
-        /* フォームの送信 */
+         /*フォームの右側　１、２つ目  ＋　入力欄の右側だけマージンつける*/
+.form-item-right1-1 , .form-item-right1-2 , .form-item-right2-1 , .form-item-right2-2{
+    width:100%;
+    max-width:240px;
+    height:47.5px;
+}
+.form-item-right1-2 , .form-item-right2-2{
+    margin-left:40px;
+}
+        /*フォームの右側　３、４つ目*/
+.form-item-right3 , .form-item-right4{
+    width:100%;
+    max-width:521px;
+    height:47.5px;
+}
+        /*フォームの右側　5つ目の中身*/
+.form-item-right5List{
+    margin-top:5px;
+    margin-bottom:0px;
+}
+        /* フォームの右側　６つ目 */
+.form-item-right6{
+    width:100%;
+    max-width:521px;
+    height:207.5px;
+}
+    /* フォームの送信 */
 .btn_send{
     display:block;
     width:350px;
@@ -1279,6 +1268,94 @@ right: 35px;
     color:white;
     font-weight:600;
 }
+
+
+/* フォームの確認画面 */
+    /* フォーム確認画面の上部 */
+    .confirm h2,.confirm-message{
+        text-align: center;
+    }
+    .confirm h2{
+        font-size:50px;
+    }
+    .confirm .confirm-message{
+        max-width:80%;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .confirm .confirm-message p{
+        font-size:25px;
+        margin-bottom:0px;
+    }
+    .confirm .confirm-message p:nth-child(2){
+        margin-bottom:0px;
+        margin-top:0px;
+    }
+
+    /* フォーム確認画面の下部 */
+        /* フォーム全体 */
+        .confirmForm{
+            max-width:790px;
+            margin-right:auto;
+            margin-left:auto;
+            padding-top:30px;
+        }
+        /* フォームのボタン以外を線で囲む */
+        .confirmFormBox{
+            border: 1px solid rgb(112, 112, 112);
+        }
+            /* フォーム確認　一行　１、２、３、４、５、６つ目*/
+            .confirmForm-item{
+                display: flex;
+                align-items: center;
+                width:100%;
+                border-bottom: 1px solid rgb(112, 112, 112);
+            }
+            /* 行ごとの色付け */
+            .confirmForm-item1 , .confirmForm-item3 , .confirmForm-item5{
+                    background-color:rgba(244,97,36,0.1);
+            }
+                /* フォーム確認の左側　１、２、３、４、５、６つ目 */
+            .confirmForm-item-left{
+                width:100%;
+                max-width:150px;
+                margin-top:0px;
+                margin-bottom:0px;
+                padding-left:10px;
+                font-size:15px;
+                font-weight:300;
+                font-family: 'ヒラギノ角ゴシック';
+            }
+                    /* フォーム確認の右側　枠線つける */
+            .confirmForm-item-right{
+                border-left: 1px solid rgb(112, 112, 112);
+                padding:10px;
+            }
+                    /* フォーム確認の右側　１、２つ目　中身を横並びにする */
+            .confirmForm-item-right1 ,.confirmForm-item-right2{
+                display: flex;
+            }
+                    /*フォーム確認の右側　１、２つ目  ＋　入力欄の右側だけマージンつける*/
+            .confirmForm-item-right1-1 , .confirmForm-item-right1-2 , .confirmForm-item-right2-1 , .confirmForm-item-right2-2{
+                width:auto;
+                height:auto;
+            }
+            .confirmForm-item-right1-2 , .confirmForm-item-right2-2{
+                margin-left:15px;
+            }
+                    /*フォーム確認の右側　３、４つ目*/
+            .confirmForm-item-right3 , .confirmForm-item-right4{
+                width:auto;
+                height:auto;
+            }
+                    /* フォーム確認の右側　６つ目 */
+            .confirmForm-item-right6{
+                width:100%;
+                height:auto;
+            }
+
+
+
 /* セクション８ */
 .s8-a1{
     width:120px;
