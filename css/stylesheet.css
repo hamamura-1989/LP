@@ -201,6 +201,9 @@ body{
         font-weight:600;
         line-height:75px;
     }
+    .ideal{
+        text-decoration: none;
+    }
 
    /* セクション２の下部 */
     .s2-2b2{
