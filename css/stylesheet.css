@@ -243,7 +243,8 @@ body{
     margin-left:auto;
     margin-right:auto;
     position: relative;
-    top: 15vh;
+    margin-top: 100px;
+    height: 760px;
     }
 
 .s3-a2 div{
@@ -253,9 +254,7 @@ body{
 
 
 .s3-a3{
-position: relative;
-top:200px;
-width: 430px;
+display: block;
 margin-left:auto;
 margin-right: auto;
 font-size: 15px;
@@ -263,6 +262,7 @@ font-weight: 600;
 font-family: 'ヒラギノ角ゴシック';
 line-height: 150%;
 text-align: center;
+width: 430px;
 } 
 
 
@@ -790,7 +790,7 @@ right: 35px;
     background-color: #B93201;
     position: absolute;
     bottom:15px;
-    left: 15%; 
+    left: 18%; 
     
 }
 
@@ -1058,7 +1058,7 @@ right: 35px;
     background-color: #B93201;
     position: absolute;
     bottom:15px;
-    left: 15%; 
+    left: 18%; 
     
 }
 
