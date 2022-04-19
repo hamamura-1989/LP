@@ -1,12 +1,12 @@
 @media (max-width:600px){
-    /* �^�C�g���@���X�|���V�u */
-        /* �㕔������������ */
+    /* タイトル　レスポンシブ */
+        /* 上部を少しあける */
         .title-wrapper{
             padding-top: 25px;
             margin-right:0px;
         }
-        /* �^�C�g���S�́@�p�x�̂΂���@����ɂ���ĉ��Ƃ̊Ԋu���ς��� */
-           /* ���̊p�x���� */
+        /* タイトル全体　角度のばらつき　これによって下との間隔も変える */
+           /* 元の角度解除 */
             .degree-21{
                 transform: unset;
                 padding-bottom: initial;
@@ -19,7 +19,7 @@
                 transform: unset;
                 padding-bottom: initial;
             }
-            /* �X�}�z�p�̊p�x�ƊԊu�@�X�}�z�ł͉E�������Ō��߂Ă��� */
+            /* スマホ用の角度と間隔　スマホでは右か左かで決めている */
             .degree9{
                 transform: rotateZ(-9deg);
                 padding-bottom: 20px;
@@ -32,26 +32,26 @@
             }
             
     
-        /* �^�C�g���̒��g�̃p�[�c */
-            /* �T�u�^�C�g���@�T�C�Y */
+        /* タイトルの中身のパーツ */
+            /* サブタイトル　サイズ */
             .sub-title{
                 font-size: 10px;
                 font-weight:600;
             }
-            /* ���C���^�C�g���@�O�̕����@�T�C�Y*/
+            /* メインタイトル　前の文字　サイズ*/
             .main-frontTitle{
                 font-size: 30px;
             }
-            /* ���C���^�C�g���@�O�����@����� */
+            /* メインタイトル　前文字　縁取り */
             .main-frontTitle{
                 -webkit-text-stroke: 1px;
             }
-            /* ���C���^�C�g���@��땶���@�㉺�ʒu�ƃT�C�Y */
+            /* メインタイトル　後ろ文字　上下位置とサイズ */
             .main-backTitle{
                 font-size: 30px;
                 top:43px;
             }
-            /* ���C���^�C�g���@��땶���@���E�ʒu�@�E���������� */
+            /* メインタイトル　後ろ文字　左右位置　右側か左側か */
             .backTitle-right{
                 right:3px;
             }
@@ -62,7 +62,7 @@
     
     
     
-    /* �Z�N�V����1�@���X�|���V�u */
+    /* セクション1　レスポンシブ */
            .s1{
              width:360px;
              height:640px;
@@ -113,12 +113,12 @@
             }
     
     
-            /*�X�}�z�ł͗L��*/
+            /*スマホでは有効*/
             .px_hid{
              display: block;
             }
     
-             /*�X�}�z�ł͖���*/
+            /*スマホでは無効*/
             .pc_hid2{
              display: none; 
             }
@@ -171,7 +171,7 @@
             }
     
     
-    /* �Z�N�V�����Q�@���X�|���V�u */
+    /* セクション２　レスポンシブ */
            
             
       
@@ -192,11 +192,11 @@
             }
      
     
-        /* ���̃Z�N�V�����Ƃ̊Ԋu���� */
+        /* 次のセクションとの間隔調整 */
         .s2{
             padding-bottom:60px;
         }   
-        /* �Z�N�V�����Q�@�㕔 */
+    /* セクション２　上部 */
         .s2-b1{
             width:240px;
             font-size: 17px;
@@ -215,7 +215,7 @@
     
     
     
-    /* �Z�N�V����3 ���X�|���V�u*/
+    /* セクション3 レスポンシブ*/
     
             .topbox{
              display: flex;
@@ -228,7 +228,7 @@
             }
     
             .s3{
-                height: 2280px;   
+                height: 2300px;   
                }
     
     
@@ -246,18 +246,17 @@
             .s3-a3 {
              width: 250px;
              position: relative;
-             top: 2%;
-             font-family:'�q���M�m�p�S�V�b�N';
+             top: 48%;
              font-size: 16px;
              font-weight: 300;
     
             }    
     
             .s3-a4{
-            position: absolute;
             width: 90px;    
             height: 125px;
             top:70%;
+            left: 80%;
             } 
         
             .s3-b2{
@@ -269,7 +268,7 @@
     
             .allbox{
             right:12%;
-            top: 5vh;
+            top: -50px;
             }
     
     
@@ -302,23 +301,23 @@
     
     
     
-    /* �Z�N�V�����S ���X�|���V�u*/
-            /* ���̃Z�N�V�����Ƃ̊Ԋu���� */
+    /* セクション４ レスポンシブ*/
+            /* 次のセクションとの間隔調整 */
             .s4{
                 padding-bottom:60px;
             }
-            /* ���Ⴒ�Ƃ̃u���b�N���� */
+            /* 事例ごとのブロック高さ */
             .s4-a2 ,.s4-a3{
                 padding-top:10px;
                 height:820px;
             }
-            /* ���Ⴒ�Ƃ̓�s�̕��� */
+            /* 事例ごとの二行の文章 */
             .s4-b2, .s4-2b2 , .s4-b3, .s4-2b3{
                 margin-bottom:15px;
                 font-size: 15px;
                 line-height:50px;
             }
-            /* �g�їp�摜�̐؂蔲�� ���*/
+            /* 携帯用画像の切り抜き 一つ目*/
             .s4-3b2{
                 margin-top:10px;
             }
@@ -342,7 +341,7 @@
                 top:510px;
                 color:white;
             }
-            /* �g�їp�摜�̐؂蔲�� ���*/
+           /* 携帯用画像の切り抜き 二つ目*/
             .s4-3b3{
                 margin-top:10px;
                 width:360px;
@@ -371,7 +370,7 @@
                 color:white;
             }
     
-    /* �Z�N�V����5 ���X�|���V�u */
+    /* セクション5 レスポンシブ */
           
            .s5{
                height: 1480px;
@@ -400,7 +399,7 @@
     
        
     
-    /* �Z�N�V�����U ���X�|���V�u */
+    /* セクション６ レスポンシブ */
            .s6{
                height:880px;
                background: linear-gradient(to bottom, rgba(255,255,255,0.57), rgba(227,247,191,0.57) 45%, rgba(211,230,178,0.57) 60%, rgba(224,244,189,0.57) 70%, rgba(255,255,255,0.57));
@@ -452,8 +451,8 @@
                 height:100px;
             }
     
-    /* �Z�N�V�����V�@���X�|���V�u */
-        /* �㕔�A�C�R���ƃ��b�Z�[�W */
+    /* セクション７　レスポンシブ */
+        /* 上部アイコンとメッセージ */
         .s7-a2{
             height:auto;
         }
@@ -554,7 +553,7 @@
 
 
         
-    /* �Z�N�V�����W�@���X�|���V�u */
+    /* セクション８　レスポンシブ */
             .s8-a1{
                 width:60px;
                 height:60px;
