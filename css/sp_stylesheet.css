@@ -4,6 +4,7 @@
         .title-wrapper{
             padding-top: 25px;
             margin-right:0px;
+            max-width: 50%;
         }
         /* タイトル全体　角度のばらつき　これによって下との間隔も変える */
            /* 元の角度解除 */
